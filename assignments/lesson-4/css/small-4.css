@@ -1,0 +1,69 @@
+body {
+	background-color: #ffd183;
+}
+
+header {
+	margin: 10px auto;
+	background-color: #ffb32b;
+	/*border: 8px solid #ffd183;*/
+	box-shadow: 0 0 15px #777;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+
+.motto {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    text-align: center;
+    padding: 10px auto;
+}
+
+ul {
+    list-style-type: none;
+    background-color: lightgoldenrodyellow;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Staatliches', cursive;
+  }
+.current {
+    background-color: greenyellow;
+}
+
+a:link {
+    color: green;
+    text-decoration: none;
+}
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+a:hover { 
+    color: rgb(255, 94, 0);
+    text-decoration: none;
+}
+a:active {
+    color: purple;
+    text-decoration: none;
+   /*background-color: hotpink;*/
+}
+
+main {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    margin: 10px auto;
+	background-color: #ffb32b;
+	/*border: 8px solid #ffd183;*/
+	box-shadow: 0 0 30px #777;
+	text-align: center;
+}
+
