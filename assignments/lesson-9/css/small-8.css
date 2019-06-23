@@ -87,7 +87,8 @@ main {
 .town-cards {
     display: flex;
     flex-direction: column;
-    
+    padding: 10px;
+    border-width: 3px;
 }
 
 /*-----------FORM-------------*/
