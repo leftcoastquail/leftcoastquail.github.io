@@ -11,16 +11,11 @@
 
   <body>
 
-      <header>
-
-      </header>
-
       <section>
 
       </section>
 
     <script>
-    var header = document.querySelector('header');
     var section = document.querySelector('section');
     var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
     var request = new XMLHttpRequest();
@@ -48,11 +43,15 @@
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');
+        var myPara5 = document.createElement('p');
         var myList = document.createElement('ul');
         myH2.textContent = heroes[i].name;
         myPara1.textContent = heroes[i].motto;
         myPara2.textContent = 'Year Founded' + heroes[i].yearFounded;
-        myPara3.textContent = 'Events:';
+        myPara3.textContent = 'Year Founded' + heroes[i].currentPopulation;
+        myPara4.textContent = 'Year Founded' + heroes[i].averageRainfall;
+        myPara5.textContent = 'Events:';
         var superPowers = heroes[i].events;
         for(var j = 0; j < superPowers.length; j++) {
           var listItem = document.createElement('li');
@@ -63,6 +62,8 @@
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
+        myArticle.appendChild(myPara4);
+        myArticle.appendChild(myPara5);
         myArticle.appendChild(myList);
         section.appendChild(myArticle);
       }
