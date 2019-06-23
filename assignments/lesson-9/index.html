@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Report a Storm Near You">
+<meta name="author" content="Natalie Mathie">
+
+
+<title>Storm Center</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small-8.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium-8.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large-8.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+    <div>
+        <header>
+            <h2>Weather Where I Am</h2>
+            <div class="motto"> Just the weather I need </div>
+            <img id="preston-banner" src="images/clouds-country-459129.jpg" alt="hero-image">
+        </header>
+    
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="preston" title="Preston">Preston</a></li>
+                <li><a href="soda-springs" title="Soda Springs">Soda Springs</a></li>
+                <li><a href="fish-haven" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="storm-center" title="Storm Center" class="current">Storm Center</a></li>
+                <li><a href="gallery" title="Gallery">Gallery</a></li>
+                <li><a href="index" title="Home">Home</a></li>
+            </ul>   
+            <h1 class="header">Storm Center</h1>
+        </nav>
+    </div>
+
+
+    <section>
+
+    </section>
+
+    <script>
+        var section = document.querySelector('section');
+        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function() {
+        var townsInfo = request.response;
+        showTowns(townsInfo);
+        }
+
+        function showTowns(jsonObj) {
+        var townStuff = jsonObj['towns'];
+      
+  for (var i = 0; i < towns.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+/*    var myPara5 = document.createElement('p');
+    var myList = document.createElement('ul');
+*/
+    myH2.textContent = towns[i].name;
+    myPara1.textContent = towns[i].motto;
+    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+    myPara3.textContent = 'Population: ' +  towns[i].currentPopulation;
+    myPara4.textContent = 'Annual Rainfall: ' +  towns[i].averageRainfall;
+/*    myPara5.textContent = 'Events:';
+        
+    var eventsList = towns[i].events;
+    for (var j = 0; j < events.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = events[j];
+      myList.appendChild(listItem);
+    }
+*/
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+/*    myArticle.appendChild(myPara5);
+    myArticle.appendChild(myList);
+*/
+    section.appendChild(myArticle);
+  }
+}
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
