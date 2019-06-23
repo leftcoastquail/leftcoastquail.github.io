@@ -87,8 +87,9 @@ main {
 .town-cards {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    border-width: 3px;
+    background-color: lightcoral;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*-----------FORM-------------*/
