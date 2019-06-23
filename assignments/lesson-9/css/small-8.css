@@ -6,15 +6,15 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 
 body {
-    background-color: #ffd183;
+    background-color: #718199;
     
 }
 
 header {
 	margin: 10px auto;
-	background-color: lightskyblue;
+	background-color: rgba(135, 206, 250, 0.637);
 	/*border: 8px solid #ffd183;*/
-	box-shadow: 0 0 15px #777;
+	box-shadow: 0 0 9px #777;
     text-align: center;
     font-family: 'Raleway', cursive;
 }
@@ -82,6 +82,12 @@ main {
 main {
     padding: 0 2%;
     min-height: 20rem;
+}
+
+.town-cards {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /*-----------FORM-------------*/
