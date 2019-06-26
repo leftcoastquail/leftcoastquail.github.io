@@ -11,10 +11,9 @@
       "May 15-30: Rush the Creek Days",
       "July 24: Bear Lake Blunder Run",
       "December 12: Light the Tree"
-    ],
-    "image": "images/cloudy-551615.jpg",
+    ]
   },
- {
+  {
     "name": "Preston",
     "motto": "Home of Napoleon Dynamite.",
     "yearFounded": 1866,
@@ -24,8 +23,7 @@
       "March 29: Work Creek Revival",
       "July 8-12: Napoleon Dynamite Festival",
       "November 2-4: Freedom Days"
-    ],
-    "image": "images/cloudy-551615.jpg",
+    ]
   },
   {
     "name": "Soda Springs",
@@ -37,8 +35,7 @@
       "February 29: Geyser Song Day",
       "May 1-6: Days of May Celebration",
       "October 15-16: Octoberfest"
-    ],
-    "image": "images/cloudy-551615.jpg",
+    ]
   }
- ]
+]
 }
