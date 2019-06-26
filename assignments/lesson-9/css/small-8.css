@@ -84,13 +84,29 @@ main {
     min-height: 20rem;
 }
 
-.town-cards {
+section article {
     display: flex;
     flex-direction: column;
-    background-color: lightcoral;
-    justify-content: center;
+    background-color: gainsboro;
+    justify-content: left;
     font-family: 'Poppins', sans-serif;
+    /*box-sizing: 50%;*/
+    float: left;
+    width: 300px;
+    height: 500px; 
+    border: 8px solid rgba(135, 206, 250, 0.637);
+    padding: 25px;
+    margin: 20px;
 }
+
+section p {
+    margin: 5px 0;
+}
+      
+section ul {
+    margin-top: 5px 0 5px 12px;
+}
+
 
 /*-----------FORM-------------*/
 form fieldset {

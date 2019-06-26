@@ -9,7 +9,9 @@
 /*----------- BODY --------------*/
 
 
-
+section {
+    flex-direction: row;
+    border: solid 8px rgba(135, 206, 250, 0.637);
 /*----------- HEADER --------------*/
 
 
