@@ -1,0 +1,198 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+    background-color: #718199;
+    
+}
+
+header {
+	margin: 10px auto;
+	background-color: rgba(135, 206, 250, 0.637);
+	/*border: 8px solid #ffd183;*/
+	box-shadow: 0 0 9px #777;
+    text-align: center;
+    font-family: 'Raleway', cursive;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.motto {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    text-align: center;
+    padding: 10px auto;
+    max-width: 700px;
+}
+
+.navigation { list-style: none; text-align: center; }
+  .navigation li:first-child { display: block;}
+  .navigation li { display: none;}
+  .navigation a {	display: block;	color: #fff; padding: .75rem;	text-align: center;	text-decoration: none;}
+  .navigation a:hover {	color: #000; background-color: #fff; font-weight: 700;	}
+
+ul {
+    list-style-type: none;
+    background-color: lightgoldenrodyellow;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Staatliches', cursive;
+  }
+.current {
+    background-color: lightskyblue;
+}
+
+a:link {
+    color: green;
+    text-decoration: none;
+}
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+a:hover { 
+    color: rgb(255, 94, 0);
+    text-decoration: none;
+}
+a:active {
+    color: purple;
+    text-decoration: none;
+   /*background-color: hotpink;*/
+}
+
+main {
+    text-align: left;
+    font-family: 'Staatliches', cursive;
+
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    justify-content: left;
+    font-family: 'Poppins', sans-serif;
+    /*box-sizing: 50%;*/
+    float: left;
+    width: 300px;
+    height: 500px; 
+    border: 8px solid rgba(135, 206, 250, 0.637);
+    padding: 25px;
+    margin: 20px;
+}
+
+section p {
+    margin: 5px 0;
+}
+      
+section ul {
+    margin-top: 5px 0 5px 12px;
+}
+
+
+/*-----------FORM-------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px dashed green;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: goldenrod;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: green;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: lightskyblue;
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: hotpink solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+footer {
+    margin: 10px auto;
+    background-color: lightskyblue;
+	/*border: 8px solid #ffd183;*/
+	box-shadow: 0 0 30px #777;
+	text-align: center;
+}
+
+/* hamburger menu */
+.responsive li { display: block; }
+@media only screen and (min-width: 32.5em) {
+    .navigation li:first-child { display: none;	}
+      .navigation li { display: inline-block; margin-right: 1rem;}	
+      .navigation li a { color: green;}
+  }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .responsive li {position: relative;}
+    .responsive li a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

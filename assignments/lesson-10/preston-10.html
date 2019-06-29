@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Community weather site for Preston, Idaho, USA">
+    <title>Weather Where I Am | Preston, Idaho</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/small-8.css"> 
+    <link rel="stylesheet" href="css/large-8.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div>
+    <header>
+        <h2>Weather Where I Am</h2>
+        <div class="motto"> Just the weather I need </div>
+        <img id="preston-banner" src="images/cit230-image-franklin-small.jpg" alt="hero-image">
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="preston" title="Preston" class="current">Preston</a></li>
+            <li><a href="soda-springs" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="fish-haven" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="storm-center" title="Storm Center">Storm Center</a></li>
+            <li><a href="gallery" title="Gallery">Gallery</a></li>
+            <li><a href="Home" title="Home">Home</a></li>
+        </ul>   
+        <h1 class="header">Preston, Idaho</h1>
+    </nav>
+</div>
+
+<div>
+        <p>Current temperature<span id="cc-temp"></span>&deg; F 
+            <img id="cc-img" src="" alt=""></img>
+        </p>
+        <p>High temperature <span id="cc-tempHigh"></span>&deg; F </p>
+        <p>Humidity <span id="cc-humidity"></span>&percnt; </p>
+        <p>Wind Speed <span id="cc-windS"></span> mph </p>
+        <p>Wind Chill <span id="cc-windC"></span>&deg; F</p>
+        
+    <script src="scripts/weatherapi.js"></script>
+</div>
+
+<main role="main" class="main">
+    <article>
+        <h3 class="header">Events</h3>
+        <article>
+    
+                <section class="town-cards">
+  
+                    </section>
+    
+            <script>
+                var section = document.querySelector('section');
+                /* var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'; */
+                var requestURL = 'https://raw.githubusercontent.com/leftcoastquail/leftcoastquail.github.io/master/assignments/lesson-9/towns.json';
+                var request = new XMLHttpRequest();
+                request.open('GET', requestURL);
+                request.responseType = 'json';
+                request.send();
+                request.onload = function() {
+                  var superHeroes = request.response;
+                  showHeroes(superHeroes);
+                }
+            
+                function showHeroes(jsonObj) {
+                  var heroes = jsonObj['towns'];
+                    for(var i = 0; i < heroes.length; i++) {
+                    var myArticle = document.createElement('article');
+                    
+                    
+                    
+                    var myList = document.createElement('ul');
+                    
+                    
+                   
+                    var superPowers = heroes[i].events;
+                    for(var j = 0; j < superPowers.length; j++) {
+                      var listItem = document.createElement('li');
+                      listItem.textContent = superPowers[j];
+                      myList.appendChild(listItem);
+                    }
+                   
+                   
+                    
+                    myArticle.appendChild(myList);
+                    section.appendChild(myArticle);
+                  }
+                }
+                </script>
+        </article>
+            <!-- article image here 
+        <img src="undefined" alt="article image">
+        -->
+    </article>
+</main>
+
+<div id="footer" class="header">
+    <footer>
+        <p>&copy;2019</p>
+        <p>Weather information generously provided by <a href="https://openweathermap.org/" title="openweathermap.org">openweathermap.org</a></p>
+    </footer>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
