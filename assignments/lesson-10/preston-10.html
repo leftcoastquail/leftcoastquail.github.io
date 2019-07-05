@@ -5,9 +5,10 @@
     <meta name="description" content="Community weather site for Preston, Idaho, USA">
     <title>Weather Where I Am | Preston, Idaho</title>
     <link rel="stylesheet" href="css/normalize.css"> 
-    <link rel="stylesheet" href="css/small-8.css"> 
-    <link rel="stylesheet" href="css/large-8.css"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/small.css"> 
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
 
 </head>
@@ -17,20 +18,23 @@
     <header>
         <h2>Weather Where I Am</h2>
         <div class="motto"> Just the weather I need </div>
-        <img id="preston-banner" src="images/cit230-image-franklin-small.jpg" alt="hero-image">
+        <picture class="myphoto"> 
+            <source srcset="images/farm-idaho-mountains-2500.jpg" media="(min-width: 800px)">
+            <source srcset="images/farm-idaho-mountains-738.jpg" media="(min-width: 500px) and (max-width: 799px)">
+            <img id="preston-banner" src="images/farm-idaho-mountains-360.jpg" alt="Idaho Farm with mountains">
+        </picture>
     </header>
 
-    <nav>
-        <ul class="navigation">
+    <nav class="clearfix">
+        <ul>
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="preston" title="Preston" class="current">Preston</a></li>
+            <li><a href="preston" title="Preston" class="active">Preston</a></li>
             <li><a href="soda-springs" title="Soda Springs">Soda Springs</a></li>
             <li><a href="fish-haven" title="Fish Haven">Fish Haven</a></li>
             <li><a href="storm-center" title="Storm Center">Storm Center</a></li>
             <li><a href="gallery" title="Gallery">Gallery</a></li>
             <li><a href="Home" title="Home">Home</a></li>
         </ul>   
-        <h1 class="header">Preston, Idaho</h1>
     </nav>
 </div>
 
@@ -46,7 +50,8 @@
     <script src="scripts/weatherapi.js"></script>
 </div>
 
-<main role="main" class="main">
+<main role="main">
+    <h1 class="header">Preston, Idaho</h1>
     <article>
         <h3 class="header">Events</h3>
         <article>
