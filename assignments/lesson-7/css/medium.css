@@ -1,0 +1,13 @@
+@media only screen and (min-width: 560px) {
+
+.currentWeather {
+    max-width: 25%;
+    float: right;
+}
+
+div.gallery figure {
+    flex-basis: 46%;
+}
+
+}
+/* end of media query */
