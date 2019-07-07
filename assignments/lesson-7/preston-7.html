@@ -90,35 +90,28 @@
 
 <div id="footer" class="motto">
     <footer>
-        <style>
-            #map {
-            width: 100%;
-            height: 400px;
-            background-color: grey;
-                }
-        </style>
-        
-                  <section>
-                    <!--The div element for the map -->
-                    <div id="map"></div>
-                    <script>
-                            // Initialize and add the map
-                            function initMap() {
-                              // The location of Preston
-                              var preston = {lat: 42.0963, lng: -111.8766};
-                              // The map, centered at Preston
-                              var map = new google.maps.Map(
-                                  document.getElementById('map'), {zoom: 8, center: preston});
-                              // The marker, positioned at Preston
-                              var marker = new google.maps.Marker({position: preston, map: map});
+        <section>
+            <!--The div element for the map -->
+            <div id="map"></div>
+                <script>
+                // Initialize and add the map
+                    function initMap() {
+                    // The location of Preston
+                        var preston = {lat: 42.0963, lng: -111.8766};
+                        // The map, centered at Preston
+                        var map = new google.maps.Map(
+                        document.getElementById('map'), {zoom: 8, center: preston});
+                        // The marker, positioned at Preston
+                        var marker = new google.maps.Marker({position: preston, map: map});
                             }
-                                </script>
-                                <script async defer
-                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqt4yO_ilN0Ii-U6MFAGDcdsydku-ri5c&callback=initMap">
-                                </script>
-                              </body>
-                            </html>
-                  </section>
+                        </script>
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqt4yO_ilN0Ii-U6MFAGDcdsydku-ri5c&callback=initMap">
+                        </script>
+       </section>
+
+                           
+                  
         <p>&copy;2019 <br>
         *Please note: The wind chill calculation is only accurate for temperatures at or below 50&deg F and wind speeds above 3 mph.</p>
 
@@ -135,30 +128,4 @@
 <script src="js/hamburger.js"></script>
 <script src="js/currentdate.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
