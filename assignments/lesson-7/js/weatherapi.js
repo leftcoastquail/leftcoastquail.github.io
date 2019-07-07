@@ -9,7 +9,7 @@ weatherRequest.onload = function() {
 
 //current temp and icon//
 document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
-let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
+let icon = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
 let desc = weatherData.weather.description;
 document.getElementById('cc-img').setAttribute('src', icon);
 document.getElementById('cc-current').setAttribute('alt', desc);
