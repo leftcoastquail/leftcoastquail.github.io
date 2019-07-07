@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css"> 
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css"> 
-    <link rel="stylesheet" href="css/large.css"> 
+    <link rel="stylesheet" href="css/large.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
 
@@ -24,26 +24,24 @@
         </figure>
         <h1>Weather Where I Am</h1>
         <h3 class="motto"> Just the weather I need </h3>
-        <div class="grid">
-            <div class="clearfix currentWeather"> 
+        <div class="clearfix currentWeather"> 
                 <p>Current Conditions</p>
                 <p>Temperature: <span id="cc-temp"></span>&deg; F 
-                <!--    <img id="cc-img" src="" alt=""></img>> -->
+                    <span id="cc-current" src="" alt=""></span>
+                    <img id="cc-img" src="" alt=""></img>
                 </p>
                 <p>High: <span id="cc-tempHigh"></span>&deg; F </p>
                 <p>Humidity: <span id="cc-humidity"></span>&percnt; </p>
                 <p>Wind Speed: <span id="cc-windS"></span> mph </p>
-                <p>Wind Chill: <span id="cc-windC"></span>&deg; F</p>
-            </div>
+                <p>Wind Chill*: <span id="cc-windC"></span>&deg; F</p>
+        </div>
         
-            <picture>
+        <picture>
                 <source srcset="images/farm-idaho-mountains-1200.jpg" media="(min-width: 800px)">
                 <source srcset="images/farm-idaho-mountains-738.jpg" media="(min-width: 500px) and (max-width: 799px)">
                 <img id="preston-banner" src="images/farm-idaho-mountains-360.jpg" alt="Idaho farm with mountains">
-            </picture>
-        </div>
-        
-     </header>
+        </picture>
+    </header>
 
     <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
@@ -59,27 +57,81 @@
 </div>
 
 <main role="main" class="main">
+    <table> <!--This is where the 5 day forecast goes-->
+            <thead>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </thead>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    
+    </table>
+
     <article>
         <h1 class="header">Preston, Idaho</h1>
         <h3 class="header">Article Title</h3>
-        <p>
+           <p>
             <!-- article content here -->
-        </p>
+            </p>
             <!-- article image here 
-        <img src="undefined" alt="article image">
-        -->
+            <img src="undefined" alt="article image">
+            -->
     </article>
 </main>
 
 <div id="footer" class="motto">
     <footer>
-        <p>&copy;2019</p>
+        <style>
+            #map {
+            width: 100%;
+            height: 400px;
+            background-color: grey;
+                }
+        </style>
+        
+                  <section>
+                    <!--The div element for the map -->
+                    <div id="map"></div>
+                    <script>
+                            // Initialize and add the map
+                            function initMap() {
+                              // The location of Uluru
+                              var uluru = {lat: -25.344, lng: 131.036};
+                              // The map, centered at Uluru
+                              var map = new google.maps.Map(
+                                  document.getElementById('map'), {zoom: 4, center: uluru});
+                              // The marker, positioned at Uluru
+                              var marker = new google.maps.Marker({position: uluru, map: map});
+                            }
+                                </script>
+                                <script async defer
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNaZ0K4WK090oiNvXB-8QrDXPTpS0zuzA&callback=initMap">
+                                </script>
+                              </body>
+                            </html>
+                  </section>
+        <p>&copy;2019 <br>
+        *Please note: The wind chill calculation is only accurate for temperatures at or below 50&deg F and wind speeds above 3 mph.</p>
+
+        </p>
+        
         <div>
             <p id="demo"></p>
         </div>
+
     </footer>
 </div>
 <script src="js/weatherapi.js"></script>
+
 <script src="js/hamburger.js"></script>
 <script src="js/currentdate.js"></script>
 </body>
