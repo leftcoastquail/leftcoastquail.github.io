@@ -20,6 +20,7 @@ header {
     font-family: 'Staatliches', cursive;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    position: static;
 }
 
 header h1 {
@@ -36,7 +37,7 @@ header figure.logo {
     
 }
 
-.currentWeather {
+header div.currentWeather {
     float: none;
     font-family: 'Poppins', sans-serif;
     font-size: .8rem;
@@ -44,12 +45,12 @@ header figure.logo {
     border: 8px solid rgb(5, 53, 83);
     padding: 10px 20px;
     margin: 20px;
+    background-color: rgba(107, 165, 201, 0.514);
     
     
 }
 header picture img {
     width: 100%;
-    position: relative;
 }
 
 

@@ -16,7 +16,7 @@ nav button {display: none;}
 
         }
 
-.currentWeather {
+header div.currentWeather {
     max-width: 33%;
     float: right;
 }
