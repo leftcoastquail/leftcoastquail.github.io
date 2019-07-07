@@ -5,13 +5,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-/* body rules */
+/*----------BODY----------*/
 body {
-    background-color: #acb4b4;
+    background-color: #e9db1b;
     
 }
 
-/* header rules */
+/*----------HEADER---------- */
 header {
 	background-color: rgba(135, 206, 250, 0.637);
     padding: 1rem 0;
@@ -54,7 +54,7 @@ header picture img {
 }
 
 
-/* navigation rules */
+/*----------NAVIGATION----------*/
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -89,17 +89,17 @@ nav ul li a:hover {
 }
 nav ul.hide {display: none;}
 
-/* main rules */
+/*----------MAIN-------------*/
 main {
     text-align: left;
     font-family: 'Staatliches', cursive;
     display: block;
     min-height: 60rem;
     color: rgb(16, 56, 116);
+    margin: 2%;
 }
 
-main h1 {
-    color: rgb(16, 56, 116);
+main article {
     margin: 2%;
 }
 
@@ -125,16 +125,17 @@ div.gallery figcaption {
     margin: 3px;
 }
 
-section article {
+/* ------EVENTS------ */
+.town-cards {
     display: flex;
     flex-direction: column;
-    background-color: gainsboro;
+    background-color: hotpink;
     justify-content: left;
     font-family: 'Poppins', sans-serif;
     /*box-sizing: 50%;*/
     float: left;
     width: 300px;
-    height: 500px; 
+    min-height: 200px; 
     border: 8px solid rgba(135, 206, 250, 0.637);
     padding: 25px;
     margin: 20px;
@@ -146,6 +147,7 @@ section p {
       
 section ul {
     margin-top: 5px 0 5px 12px;
+    text-decoration: none;
 }
 
 
@@ -207,19 +209,27 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+/*-------FOOTER--------------*/
 footer {
-    margin: 10px auto;
-    background-color: lightskyblue;
+    background-color: rgba(135, 206, 250, 0.637);
     font-family: 'Staatliches', cursive;
-	box-shadow: 0 0 30px #777;
-    text-align: center;
-    padding: 1rem 2%;
+    box-shadow: 0 0 30px #777;
+    padding: 2%;
+    color: rgb(16, 56, 116);
+    min-height: 350px;
+    
+    
 }
 
 #map {
-    width: 100%;
-    height: 400px;
+    float: left;
+    width: 50%;
+    height: 300px;
     background-color: grey;
+    
+    border: solid rgb(146, 144, 139);
+    margin: 0 20px 0 0;
 }
 
 /* Force an element not to collapse */

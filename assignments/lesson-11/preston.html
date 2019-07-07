@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Community weather site for Preston, Idaho, USA">
+    <title>Weather Where I Am | Preston, Idaho</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css"> 
+    <link rel="stylesheet" href="css/large.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div>
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/logo-assets/logo0.png" alt="logo"
+            srcset="images/logo-assets/logo1.png 1x, 
+                    images/logo-assets/logo2.png 2x, 
+                    images/logo-assets/logo3.png 3x">
+        </figure>
+        <h1>Weather Where I Am</h1>
+        <h3 class="motto"> Just the weather I need </h3>
+                
+        <picture>
+                <source srcset="images/farm-idaho-mountains-1200.jpg" media="(min-width: 800px)">
+                <source srcset="images/farm-idaho-mountains-738.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                <img id="preston-banner" src="images/farm-idaho-mountains-360.jpg" alt="Idaho farm with mountains">
+        </picture>
+    </header>
+
+    <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="preston.html" title="Preston" class="active">Preston</a></li>
+            <li><a href="soda-springs" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="fish-haven" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="storm-center" title="Storm Center">Storm Center</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+            <li><a href="Home" title="Home">Home</a></li>
+        </ul>   
+    </nav>
+</div>
+
+<main role="main" class="main">
+    <table> <!--This is where the 5 day forecast goes-->
+            <thead>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </thead>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    
+    </table>
+    <div class="clearfix currentWeather"> 
+            <p>Current Conditions</p>
+            <p>Temperature: <span id="cc-temp"></span>&deg; F 
+                <span id="cc-current" src="" alt=""></span>
+                <img id="cc-img" src="" alt=""></img>
+            </p>
+            <p>High: <span id="cc-tempHigh"></span>&deg; F </p>
+            <p>Humidity: <span id="cc-humidity"></span>&percnt; </p>
+            <p>Wind Speed: <span id="cc-windS"></span> mph </p>
+            <p>Wind Chill*: <span id="cc-windC"></span>&deg; F</p>
+    </div>
+
+    <article>
+        <h1 class="header">Preston, Idaho</h1>
+        <h3 class="header">Article Title</h3>
+           <p>
+            <!-- article content here -->
+            </p>
+            <!-- article image here 
+            <img src="undefined" alt="article image">
+            -->
+    </article>
+
+    <article>
+    
+        <section class="town-cards">
+        <h3>Events</h3>
+        </section>
+
+        <script>
+            var section = document.querySelector('section');
+            /* var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'; */
+            var requestURL = 'https://raw.githubusercontent.com/leftcoastquail/leftcoastquail.github.io/master/assignments/lesson-9/towns.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+              var superHeroes = request.response;
+              showHeroes(superHeroes);
+            }
+        
+            function showHeroes(jsonObj) {
+              var heroes = jsonObj['towns'];
+                for(var i = 0; i < heroes.length; i++) {
+                var myArticle = document.createElement('article');
+                var myList = document.createElement('ul');
+                
+                
+               
+                var superPowers = heroes[i].events;
+                    for(var j = 0; j < superPowers.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = superPowers[j];
+                    myList.appendChild(listItem);
+            }
+               
+               
+                
+                myArticle.appendChild(myList);
+                section.appendChild(myArticle);
+              }
+            }
+        </script>
+    </article>
+</main>
+
+<div id="footer" class="motto">
+    <footer>
+        <section>
+            <!--The div element for the map -->
+            <div id="map"></div>
+                <script>
+                // Initialize and add the map
+                    function initMap() {
+                    // The location of Preston
+                        var preston = {lat: 42.0963, lng: -111.8766};
+                        // The map, centered at Preston
+                        var map = new google.maps.Map(
+                        document.getElementById('map'), {zoom: 8, center: preston});
+                        // The marker, positioned at Preston
+                        var marker = new google.maps.Marker({position: preston, map: map});
+                            }
+                        </script>
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqt4yO_ilN0Ii-U6MFAGDcdsydku-ri5c&callback=initMap">
+                        </script>
+       </section>
+
+                           
+                  
+        <p>&copy;2019 <br>
+        *Please note: The wind chill calculation is only accurate for temperatures at or below 50&deg F and wind speeds above 3 mph.</p>
+
+        </p>
+        
+        <div>
+            <p id="demo"></p>
+        </div>
+
+    </footer>
+</div>
+<script src="js/weatherapi.js"></script>
+<script src="js/hamburger.js"></script>
+<script src="js/currentdate.js"></script>
+</body>
+</html>
