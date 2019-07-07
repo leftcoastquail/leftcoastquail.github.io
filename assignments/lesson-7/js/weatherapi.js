@@ -22,5 +22,5 @@ document.getElementById('cc-windS').innerHTML = weatherData.wind.speed;
 //wind chill//
 let t = weatherData.main.temp
 let s = weatherData.wind.speed
-document.getElementById('cc-windC').innerHTML = (35.74 + (0.6215 * t) - (35.75 * s) + (0.4275 * t * s)).toFixed(2)
+document.getElementById('cc-windC').innerHTML = ((35.74 + (0.6215 * t)) - (35.75 * (Math.pow(s, 0.16))) + (0.4275 * (t * (Math.pow(s, 0.16))))).toFixed(2)
 }
