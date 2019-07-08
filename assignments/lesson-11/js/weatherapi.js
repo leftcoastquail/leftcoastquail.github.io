@@ -8,11 +8,10 @@ weatherRequest.onload = function() {
     console.log(weatherData);
 
 //current temp and icon//
-document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
+document.getElementById('cc-current').innerHTML = weatherData.weather[0].main;
 let icon = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
-let desc = weatherData.weather.description;
 document.getElementById('cc-img').setAttribute('src', icon);
-document.getElementById('cc-current').setAttribute('alt', desc);
+document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
 //high temp//
 document.getElementById('cc-tempHigh').innerHTML = weatherData.main.temp_max;
 //humidity//
