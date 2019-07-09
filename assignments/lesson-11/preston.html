@@ -45,7 +45,7 @@
     </nav>
 </div>
 
-<main role="main" class="main">
+<main role="main" class="clearfix main">
     <table> <!--This is where the 5 day forecast goes-->
             <thead>
                 <td></td>
@@ -76,27 +76,31 @@
             <p>Wind Chill*: <span id="cc-windC"></span>&deg; F</p>
     </div>
 
-    <article>
+    <article class=>
         <h1 class="header">Preston, Idaho</h1>
-        <h3 class="header">Article Title</h3>
-           <p>
-            <!-- article content here -->
+        <h3 class="header">Local Weather Story</h3>
+        <picture>
+            <source srcset="images/wheat-1200.jpg" media="(min-width: 800px)">
+            <source srcset="images/wheat-738.jpg" media="(min-width: 500px) and (max-width: 799px)">
+            <img id="preston-article" src="images/wheat-360.jpg" alt="Wheat ready to harvest">
+        </picture>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae mauris et metus mattis maximus. Duis pulvinar dictum nibh, vel sodales nisi tristique quis. Praesent at tincidunt ante. Curabitur laoreet mollis neque, non congue urna vestibulum vel. Duis ac consequat ex. Sed dictum, risus non mollis eleifend, odio leo consequat eros, semper porta ante urna a nibh. Pellentesque sit amet risus nibh. Nulla at maximus sapien. Nullam dignissim convallis justo et finibus. Duis euismod nunc nisi, ac laoreet dolor tincidunt a. In placerat quam sit amet gravida malesuada. Sed mattis iaculis metus, sed elementum purus rutrum vel. Pellentesque venenatis quam quam, ac egestas nunc hendrerit ut.
+
+            Nam non enim eu leo fringilla tempor. Nunc mattis ultrices tincidunt. Vivamus fermentum tempor nisl, eget congue felis placerat dapibus. Cras mollis pulvinar accumsan. Vivamus tempus nisi nec tellus imperdiet, non vehicula elit ultricies. Maecenas lacinia odio tortor, a vestibulum velit dictum sit amet. Pellentesque luctus, purus eu dignissim commodo, dui augue iaculis leo, a vestibulum quam purus vitae turpis. Sed nec ex vel arcu mollis tempus. Sed lacinia quam vel nunc blandit, in commodo felis lacinia. Donec eget augue odio. Aenean laoreet lacus vel lacinia finibus. Sed elementum lorem ex, et suscipit turpis vehicula quis. Curabitur sollicitudin aliquam quam, vitae porta diam dictum id.
             </p>
-            <!-- article image here 
-            <img src="undefined" alt="article image">
-            -->
     </article>
 
     <article>
     
         <section class="town-cards">
-        <h3>Events</h3>
+        <h3>Upcoming Events</h3>
         </section>
 
         <script>
             var section = document.querySelector('section');
-            /* var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'; */
-            var requestURL = 'https://raw.githubusercontent.com/leftcoastquail/leftcoastquail.github.io/master/assignments/lesson-9/towns.json';
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            /* var requestURL = 'https://raw.githubusercontent.com/leftcoastquail/leftcoastquail.github.io/master/assignments/lesson-9/towns.json'; */
             var request = new XMLHttpRequest();
             request.open('GET', requestURL);
             request.responseType = 'json';
@@ -108,30 +112,24 @@
         
             function showHeroes(jsonObj) {
               var heroes = jsonObj['towns'];
-                for(var i = 0; i < heroes.length; i++) {
                 var myArticle = document.createElement('article');
                 var myList = document.createElement('ul');
-                
-                
-               
-                var superPowers = heroes[i].events;
+                var superPowers = heroes[4].events;
                     for(var j = 0; j < superPowers.length; j++) {
                     var listItem = document.createElement('li');
                     listItem.textContent = superPowers[j];
                     myList.appendChild(listItem);
             }
-               
-               
-                
+
                 myArticle.appendChild(myList);
                 section.appendChild(myArticle);
               }
-            }
+            
         </script>
     </article>
 </main>
 
-<div id="footer" class="motto">
+<div id="footer" class="clearfix motto">
     <footer>
         <section>
             <!--The div element for the map -->

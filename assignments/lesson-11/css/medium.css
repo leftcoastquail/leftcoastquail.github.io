@@ -9,5 +9,11 @@ div.gallery figure {
     flex-basis: 46%;
 }
 
+main article picture img{
+    display: block;
+    float: left;
+    padding: 8px;
+    margin: 0;
+    max-width: 50%;
 }
 /* end of media query */
