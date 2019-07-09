@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Community weather site for Preston, Idaho, USA">
+    <title>Weather Where I Am | Preston, Idaho</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css"> 
+    <link rel="stylesheet" href="css/large.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div>
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/logo-assets/logo0.png" alt="logo"
+            srcset="images/logo-assets/logo1.png 1x, 
+                    images/logo-assets/logo2.png 2x, 
+                    images/logo-assets/logo3.png 3x">
+        </figure>
+        <h1>Weather Where I Am</h1>
+        <h3 class="motto"> Just the weather I need </h3>
+                
+        <picture>
+                <source srcset="images/gallery-banner-1200.jpg" media="(min-width: 800px)">
+                <source srcset="images/gallery-banner-738.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                <img id="preston-banner" src="images/gallery-banner-360.jpg" alt="Clouds in a blue sky">
+        </picture>
+
+        
+     </header>
+
+    <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="preston.html" title="Preston">Preston</a></li>
+            <li><a href="soda-springs.html" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="fish-haven.html" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+            <li><a href="gallery.html" title="Gallery" class="active"    >Gallery</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
+        </ul>   
+    </nav>
+</div>
+
+<main role="main" class="main">
+    <h1 class="header">Weather Gallery</h1>
+    <div class="gallery">
+        <figure><img src="images/gallery/barn-snow-1200.jpg" alt="Red barn with snow"><figcaption>A red barn in the snow.</figcaption></figure>
+        <figure><img src="images/gallery/farm-storm-clouds-1200.jpg" alt="Storm clouds over a farm"><figcaption>Storm clouds over a farm.</figcaption></figure>
+        <figure><img src="images/gallery/lightning-flash-1200.jpg" alt="Lightning flash"><figcaption>A lightning flash in a purple sky.</figcaption></figure>
+        <figure><img src="images/gallery/rain-drops-1200.jpg" alt="Rain drops"><figcaption>Rain falling on water.</figcaption></figure>
+        <figure><img src="images/gallery/sunny-field-1200.jpg" alt="Sunny field"><figcaption>A field on a sunny day.</figcaption></figure>
+        <figure><img src="images/gallery/wind-kite-1200.jpg" alt="kite"><figcaption>A kite flying in a blue sky.</figcaption></figure>
+    </div>    
+
+
+
+</main>
+
+<div id="footer" class="motto">
+    <footer>
+        <p>&copy;2019</p>
+        <div>
+            <p id="demo"></p>
+        </div>
+    </footer>
+</div>
+<script src="js/hamburger.js"></script>
+<script src="js/currentdate.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
