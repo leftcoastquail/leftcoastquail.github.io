@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Weather Where I Am Home">
 <meta name="author" content="Natalie Mathie">
-
-
 <title>Weather Where I Am | Home</title>
-
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/normalize.css"> 
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css"> 
+<link rel="stylesheet" href="css/large.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
 
-
-
-
-<!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
-
-
-     
 </head>
+
+
 <body>
     <div>
-        <header>
-          <h2>Weather Where I Am</h2>
-          <div class="motto"> Just the weather I need </div>
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo-assets/logo0.png" alt="logo"
+                srcset="images/logo-assets/logo1.png 1x, 
+                        images/logo-assets/logo2.png 2x, 
+                        images/logo-assets/logo3.png 3x">
+            </figure>
+          <h1>Weather Where I Am</h1>
+          <h3 class="motto"> Just the weather I need </h3>
            
           <picture>
             <source srcset="images/idaho-landscape-1200.jpg" media="(min-width: 800px)">
@@ -47,13 +41,13 @@
           <li><a href="preston.html" title="Preston">Preston</a></li>
           <li><a href="soda-springs.html" title="Soda Springs">Soda Springs</a></li>
           <li><a href="fish-haven.html" title="Fish Haven">Fish Haven</a></li>
-          <li><a href="storm-center.html" title="Storm Center">Storm Center</a></li>
+          <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
           <li><a href="gallery.html" title="Gallery">Gallery</a></li>
           
       </ul>   
       </nav>
     </div>
-
+    <main role="main" class="clearfix main">
         <section class="town-cards">
   
         </section>
@@ -105,5 +99,26 @@
         }
       }
       </script>
+      </main>
+    
+
+    <div id="footer" class="clearfix motto">
+        <footer>
+   
+                               
+                      
+            <p>&copy;2019</p>
+            
+            <div>
+                <p id="demo"></p>
+            </div>
+    
+        </footer>
+    </div>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
     </body>
+    </html>
+
 </html>
