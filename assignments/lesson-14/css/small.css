@@ -142,7 +142,7 @@ section.town-cards {
     flex-direction: column;
     background-color: rgba(228, 225, 225, 0.74);
     justify-content: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', sans-serif;
     /*box-sizing: 50%;*/
     float: left;
     min-width: 300px;

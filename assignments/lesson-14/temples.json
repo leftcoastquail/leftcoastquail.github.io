@@ -2,10 +2,10 @@
   "temples" : [
   {
     "name": "Bogotá Colombia",
-    "motto": "This is Fish Heaven.",
-    "yearFounded": 1864,
-    "currentPopulation": 501,
-    "averageRainfall": 14.20,
+    "address": "Carrera 46 N°127-45 Bogotá Distrito Capital Colombia",
+    "yearDedicated": 1999,
+    "phone": "+57 1-625-8000",
+    "email": "temple.bogata.colombia@churchofjesuschrist.org",
     "closures" : [
       "Wednesday, 7 August",
       "Tuesday, 10 September - Monday, 23 September",
@@ -18,10 +18,10 @@
   },
   {
     "name": "The Hague Netherlands",
-    "motto": "This is Fish Heaven.",
-    "yearFounded": 1864,
-    "currentPopulation": 501,
-    "averageRainfall": 14.20,
+    "address": "Osijlaan 2 2722 CV Zoetermeer Netherlands",
+    "yearDedicated": 2002,
+    "phone": "+31 79-343-5310",
+    "email": "temple.thehague.netherlands@churchofjesuschrist.org",
     "closures" : [
       "Monday, 19 August - Monday, 2 September",
       "Saturday, 5 October (Limited Hours)"
@@ -29,10 +29,10 @@
   },
   {
     "name": "Papeete Tahiti",
-    "motto": "Home of Napoleon Dynamite.",
-    "yearFounded": 1983,
-    "currentPopulation": 5204,
-    "averageRainfall": 16.65,
+    "address": "Temples S.D.J. (Mormon) Allee Pierre Loti Papeete, Tahiti 98716, French Polynesia",
+    "yearDedicated": 1983,
+    "phone": "+689 40-50-3939",
+    "email": "temple.papeete.tahiti@churchofjesuschrist.org",
     "closures" : [
       "Monday, 2 September - Monday, 16 September",
       "Saturday, 5 October",
@@ -43,10 +43,10 @@
   },
   {
     "name": "Cebu City Philippines",
-    "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
-    "yearFounded": 1858,
-    "currentPopulation": 2985,
-    "averageRainfall": 15.75,
+    "address": "The Church of Jesus Christ of Latter-day Saitns Gorordo Avenue, Barangay Lahug, Cebu City, 6000 Cebu, Philippines",
+    "yearDedicated": 2010,
+    "phone": "+63 32-230-1207",
+    "email": "temple.cebucity.philippines@churchofjesuschrist.org",
     "closures" : [
       "Monday, 15 July - Monday, 29 July",
       "Saturday, 12 October",
