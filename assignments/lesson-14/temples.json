@@ -29,6 +29,10 @@
     "closures" : [
       "Monday, 19 August - Monday, 2 September",
       "Saturday, 5 October (Limited Hours)"
+    ],
+    "endowments" : [
+        "Tuesday - Friday 8:00am, 9:00am, 1:00pm, 3:00pm, 6:00pm, 8:00pm",
+        "Saturday - 6:00am, 7:00am and hourly from 9:00am - 6:00pm"
     ]
   },
   {
@@ -43,15 +47,16 @@
       "Friday, 1 November (Limited Hours)",
       "Tuesday, 24 December - Wednesday, 25 December",
       "Tuesday, 31 December"
+    ],
+    "endowments" : [
+        "Tuesday & Thurday 7:00am, 9:00am, 11:00am, 1:00pm",
+        "Wednesday & Friday 8:00am, 10:00am, 12:00pm, 4:00pm, 6:00pm, 8:00pm",
+        "Saturday - hourly between 7:00am - 4:00pm"
     ]
   },
   {
     "name": "Cebu City Philippines",
-    "address": [
-        "The Church of Jesus Christ of Latter-day Saints",
-        "Gorordo Avenue, Barangay Lahug, Cebu City, 6000",
-        "Cebu, Philippines" 
-        ],
+    "address": "The Church of Jesus Christ of Latter-day Saints Gorordo Avenue, Barangay Lahug, Cebu City, 6000 Cebu, Philippines",
     "yearDedicated": 2010,
     "phone": "+63 32-230-1207",
     "email": "temple.cebucity.philippines@churchofjesuschrist.org",
@@ -61,6 +66,10 @@
       "Tuesday, 24 December",
       "Wednesday, 25 December",
       "Tuesday, 31 December"
+    ],
+    "endowments" : [
+        "Tuesday - Friday - hourly between 8:00am - 8:00pm",
+        "Saturday - hourly between 7:00am - 12:00pm"
     ]
   }
 ]

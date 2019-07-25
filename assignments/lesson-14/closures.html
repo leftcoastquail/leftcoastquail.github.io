@@ -80,11 +80,18 @@
           myPara2.textContent = 'Year Dedicated: ' + heroes[i].yearDedicated;
           myParaA.textContent = 'Telephone: ' + heroes[i].phone;
           myParaB.textContent = 'Email: ' + heroes[i].email;
-          myPara3.textContent = '2019 Closures:';
+          myParaC.textContent = '2019 Closures:';
           var superPowers = heroes[i].closures;
           for(var j = 0; j < superPowers.length; j++) {
             var listItem = document.createElement('li');
             listItem.textContent = superPowers[j];
+            myList.appendChild(listItem);
+          }
+          myPara3.textContent = 'Session Schedule:';
+          var superPowers = heroes[i].endowments;
+          for(var k = 0; k < superPowers.length; k++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = superPowers[k];
             myList.appendChild(listItem);
           }
           var myImg = document.createElement('img'); {
@@ -99,6 +106,7 @@
           myArticle.appendChild(myPara2);
           myArticle.appendChild(myParaA);
           myArticle.appendChild(myParaB);
+          myArticle.appendChild(myParaC);
           myArticle.appendChild(myPara3);
           myArticle.appendChild(myList);
           section.appendChild(myArticle);
