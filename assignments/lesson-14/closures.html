@@ -83,7 +83,7 @@
           myParaA.textContent = 'Population: ' + heroes[i].currentPopulation;
           myParaB.textContent = 'Average Rainfall: ' + heroes[i].averageRainfall;
           myPara3.textContent = 'Events:';
-          var superPowers = heroes[i].events;
+          var superPowers = heroes[i].closures;
           for(var j = 0; j < superPowers.length; j++) {
             var listItem = document.createElement('li');
             listItem.textContent = superPowers[j];
