@@ -67,7 +67,7 @@
       }
   
       function showHeroes(jsonObj) {
-        var heroes = jsonObj['towns'];
+        var heroes = jsonObj['temples'];
         for(var i = 0; i < heroes.length; i++) {
           var myArticle = document.createElement('article');
           var myH2 = document.createElement('h2');
@@ -83,7 +83,7 @@
           myParaA.textContent = 'Population: ' + heroes[i].currentPopulation;
           myParaB.textContent = 'Average Rainfall: ' + heroes[i].averageRainfall;
           myPara3.textContent = 'Events:';
-          var superPowers = heroes[i].closures;
+          var superPowers = heroes[i].events;
           for(var j = 0; j < superPowers.length; j++) {
             var listItem = document.createElement('li');
             listItem.textContent = superPowers[j];
