@@ -139,7 +139,8 @@ div.gallery figcaption {
 /* ------EVENTS------ */
 section.town-cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: rgba(228, 225, 225, 0.74);
     justify-content: left;
     font-family: 'Lora', sans-serif;
