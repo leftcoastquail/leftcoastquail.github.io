@@ -77,32 +77,41 @@ nav ul li a:hover {
 nav ul.hide {display: none;}
 
 /*----------MAIN-------------*/
-main {
-    text-align: left;
-    font-family: 'Staatliches', cursive;
-    display: block;
-    min-height: 60rem;
-    color: rgb(16, 56, 116);
-    margin: 2%;
+main div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-main article {
+main div button {
+    font-family: 'Noto Serif', cursive;
+   /* display: block; */
+    color: rgb(16, 56, 116);
     margin: 2%;
+    min-width: 25%;
+    min-height: 50px;
+    text-align: center;
+    font-size: 35px;
+}
+
+main div article {
+    margin: 2%;
+    border: 10px solid cyan;
     }
 
 
 main article p {
-    display: block;
+    /* display: block; */
     font-family: 'Poppins', sans-serif;
 }
 
-main article picture img{
-    display: flex;
-    padding: 3px;
-    margin: 0;
+.home-family {
+    /* display: block; */
+    margin: 2%;
     max-width: 100%;
-    
+    border: 10px solid cyan;
 }
+
 
 /*---------WEATHER GALLERY-----*/
 div.gallery {
@@ -218,8 +227,14 @@ footer {
     font-family: 'Lora', cursive;
     box-shadow: 0 0 30px rgb(226, 158, 57);
     padding: 2%;
-    color: rgb(16, 56, 116);
+    color: #000F49;
+    
+}
+
+footer a {
+    color: #000F49;
     text-decoration: none;
+    list-style: none;
 }
 
 #map {
@@ -232,9 +247,6 @@ footer {
     margin: 0 20px 0 0;
 }
 
-footer ul li {
-    text-decoration: none;
-}
 
 /* Force an element not to collapse */
 .clearfix:after {

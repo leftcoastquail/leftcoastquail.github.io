@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Weather Where I Am Home">
+<meta name="author" content="Natalie Mathie">
+
+
+<title>Weather Where I Am | Home</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small-8.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium-8.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large-8.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+    <div>
+        <header>
+            <h2>Weather Where I Am</h2>
+            <div class="motto"> Just the weather I need </div>
+            <img id="home-banner" src="images/corn-small.jpg" alt="hero-image">
+        </header>
+    
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="preston" title="Preston">Preston</a></li>
+                <li><a href="soda-springs" title="Soda Springs">Soda Springs</a></li>
+                <li><a href="fish-haven" title="Fish Haven">Fish Haven</a></li>
+                <li><a href="storm-center" title="Storm Center">Storm Center</a></li>
+                <li><a href="gallery" title="Gallery">Gallery</a></li>
+                <li><a href="index" title="Home" class="current">Home</a></li>
+            </ul>   
+            
+        </nav>
+    </div>
+
+        <section class="town-cards">
+  
+        </section>
+  
+      <script>
+      var section = document.querySelector('section');
+      /* var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'; */
+      var requestURL = 'https://raw.githubusercontent.com/leftcoastquail/leftcoastquail.github.io/master/assignments/lesson-14/temples.json';
+      var request = new XMLHttpRequest();
+      request.open('GET', requestURL);
+      request.responseType = 'json';
+      request.send();
+      request.onload = function() {
+        var superHeroes = request.response;
+        showHeroes(superHeroes);
+      }
+  
+      function showHeroes(jsonObj) {
+        var heroes = jsonObj['towns'];
+        for(var i = 0; i < heroes.length; i++) {
+          var myArticle = document.createElement('article');
+          var myH2 = document.createElement('h2');
+          var myPara1 = document.createElement('p');
+          var myPara2 = document.createElement('p');
+          var myParaA = document.createElement('p');
+          var myParaB = document.createElement('p');
+          var myPara3 = document.createElement('p');
+          var myList = document.createElement('ul');
+          myH2.textContent = heroes[i].name;
+          myPara1.textContent = heroes[i].motto;
+          myPara2.textContent = 'Year Founded: ' + heroes[i].yearFounded;
+          myParaA.textContent = 'Population: ' + heroes[i].currentPopulation;
+          myParaB.textContent = 'Average Rainfall: ' + heroes[i].averageRainfall;
+          myPara3.textContent = 'Events:';
+          var superPowers = heroes[i].events;
+          for(var j = 0; j < superPowers.length; j++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = superPowers[j];
+            myList.appendChild(listItem);
+          }
+          myArticle.appendChild(myH2);
+          myArticle.appendChild(myPara1);
+          myArticle.appendChild(myPara2);
+          myArticle.appendChild(myParaA);
+          myArticle.appendChild(myParaB);
+          myArticle.appendChild(myPara3);
+          myArticle.appendChild(myList);
+          section.appendChild(myArticle);
+        }
+      }
+      </script>
+    </body>
+</html>

@@ -39,28 +39,30 @@
     
       
     </div>
+    
     <main role="main" class="clearfix main">
-      <article>
-        <button>Book Now</button>
-      </article>
-      <picture class="home-family">
-        <source srcset="images/home-family-L.jpg" media="(min-width: 1000px)">
-        <source srcset="images/home-family-M.jpg" media="(min-width: 500px) and (max-width: 999px)">
-        <img src="images/home-family-S.jpg" alt="family of eight">
-      </picture>
+      <div class="container">
+        <article><button>Book Now</button>
+        </article>
       
+        <figure class="home-family">
+          <img src="images/home-family-S.jpg" alt="family of eight" sizes="50vw"
+            srcset="images/home-family-M.jpg 600w,
+                    images/home-family-M.jpg 800w">
+          </figure>
+    </div>
     </main>
     
 
-    <div id="footer" class="clearfix motto">
+    <div id="footer" class="clearfix">
         <footer>
    
                                
                       
             <p>&copy;2019</p>
-            <ul>
-              <li><a href="resources.html" title="Resources">Resources Page</a></li>
-            </ul>
+            <p>
+              <a href="resources.html" title="Resources">Resources Page</a>
+            </p>
             <div>
                 <p id="demo"></p>
             </div>

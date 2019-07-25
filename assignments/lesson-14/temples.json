@@ -1,0 +1,59 @@
+{
+  "temples" : [
+  {
+    "name": "Bogotá Colombia",
+    "motto": "This is Fish Heaven.",
+    "yearFounded": 1864,
+    "currentPopulation": 501,
+    "averageRainfall": 14.20,
+    "closures" : [
+      "Wednesday, 7 August",
+      "Tuesday, 10 September - Monday, 23 September",
+      "Saturday, 5 October",
+      "Sunday, 8 December",
+      "Tuesday, 24 December",
+      "Wednesday, 25 December",
+      "Tuesday, 31 December"
+    ]
+  },
+  {
+    "name": "The Hague Netherlands",
+    "motto": "This is Fish Heaven.",
+    "yearFounded": 1864,
+    "currentPopulation": 501,
+    "averageRainfall": 14.20,
+    "closures" : [
+      "Monday, 19 August - Monday, 2 September",
+      "Saturday, 5 October (Limited Hours)"
+    ]
+  },
+  {
+    "name": "Papeete Tahiti",
+    "motto": "Home of Napoleon Dynamite.",
+    "yearFounded": 1983,
+    "currentPopulation": 5204,
+    "averageRainfall": 16.65,
+    "closures" : [
+      "Monday, 2 September - Monday, 16 September",
+      "Saturday, 5 October",
+      "Friday, 1 November (Limited Hours)",
+      "Tuesday, 24 December - Wednesday, 25 December",
+      "Tuesday, 31 December"
+    ]
+  },
+  {
+    "name": "Cebu City Philippines",
+    "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
+    "yearFounded": 1858,
+    "currentPopulation": 2985,
+    "averageRainfall": 15.75,
+    "closures" : [
+      "Monday, 15 July - Monday, 29 July",
+      "Saturday, 12 October",
+      "Tuesday, 24 December",
+      "Wednesday, 25 December",
+      "Tuesday, 31 December"
+    ]
+  }
+]
+}
