@@ -68,7 +68,7 @@
   
       function showHeroes(jsonObj) {
         var heroes = jsonObj['temples'];
-        for(var i = 0; i < closures.length; i++) {
+        for(var i = 0; i < temples.length; i++) {
           var myArticle = document.createElement('article');
           var myH2 = document.createElement('h2');
           var myPara1 = document.createElement('p');
@@ -77,13 +77,13 @@
           var myParaB = document.createElement('p');
           var myPara3 = document.createElement('p');
           var myList = document.createElement('ul');
-          myH2.textContent = closures[i].name;
-          myPara1.textContent = closures[i].motto;
-          myPara2.textContent = 'Year Founded: ' + closures[i].yearFounded;
-          myParaA.textContent = 'Population: ' + closures[i].currentPopulation;
-          myParaB.textContent = 'Average Rainfall: ' + closures[i].averageRainfall;
+          myH2.textContent = temples[i].name;
+          myPara1.textContent = temples[i].motto;
+          myPara2.textContent = 'Year Founded: ' + temples[i].yearFounded;
+          myParaA.textContent = 'Population: ' + temples[i].currentPopulation;
+          myParaB.textContent = 'Average Rainfall: ' + temples[i].averageRainfall;
           myPara3.textContent = 'Events:';
-          var superPowers = closures[i].events;
+          var superPowers = temples[i].events;
           for(var j = 0; j < superPowers.length; j++) {
             var listItem = document.createElement('li');
             listItem.textContent = superPowers[j];
