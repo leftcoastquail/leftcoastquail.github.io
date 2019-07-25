@@ -23,10 +23,8 @@
 <link href="css/medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
 <link href="css/large.css" rel="stylesheet">
-
-
-     
 </head>
+
 <body>
     <div>
         <header>
@@ -36,7 +34,7 @@
         </header>
     
         <nav>
-            <ul class="navigation">
+            <ul class="navigation clearfix">
                 <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="preston" title="Preston">Preston</a></li>
                 <li><a href="soda-springs" title="Soda Springs">Soda Springs</a></li>
@@ -49,6 +47,7 @@
         </nav>
     </div>
 
+    <main role="main" class="clearfix main">
         <section class="town-cards">
   
         </section>
@@ -88,6 +87,13 @@
             listItem.textContent = superPowers[j];
             myList.appendChild(listItem);
           }
+          var myImg = document.createElement('img'); {
+            for(var m = 0; m < heroes.length; m++)
+                  if (m==0) {myImg.src='images/bogota.jpg';}
+                //  else if (m==2) {myImg.src='images/papeete.jpg';}
+                //  else if (m==3) {myImg.src='images/papeete.jpg';}
+                  else {myImg.src='images/cebu.jpg';}
+          }
           myArticle.appendChild(myH2);
           myArticle.appendChild(myPara1);
           myArticle.appendChild(myPara2);
@@ -96,8 +102,31 @@
           myArticle.appendChild(myPara3);
           myArticle.appendChild(myList);
           section.appendChild(myArticle);
+          myArticle.appendChild(myImg);
         }
       }
       </script>
-    </body>
+      </main>
+      
+   
+
+    <div id="footer" class="clearfix">
+      <footer>
+ 
+                             
+                    
+          <p>&copy;2019</p>
+          <p>
+            <a href="resources.html" title="Resources">Resources Page</a>
+          </p>
+          <div>
+              <p id="demo"></p>
+          </div>
+  
+      </footer>
+  </div>
+</body>
+  <script src="js/weatherapi.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/currentdate.js"></script>
 </html>

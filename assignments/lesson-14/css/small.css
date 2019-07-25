@@ -136,21 +136,20 @@ div.gallery figcaption {
     margin: 3px;
 }
 
-/* ------EVENTS------ */
-section.town-cards {
+/* ------TEMPLES------ */
+main section article {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgba(228, 225, 225, 0.74);
+    flex-direction: column;
+    background-color: #FFFFBD;
     justify-content: left;
     font-family: 'Lora', sans-serif;
     /*box-sizing: 50%;*/
     float: left;
-    min-width: 300px;
-    min-height: 200px; 
-    border: 8px solid rgb(37, 54, 5);
+    min-width: 500px;
+    min-height: 300px; 
     padding: 25px;
     margin: 20px;
+    border: 5px solid gold;
 }
 
 section p {
