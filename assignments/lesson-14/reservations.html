@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Community weather site for Preston, Idaho, USA">
+    <title>Weather Where I Am | Storm Center</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css"> 
+    <link rel="stylesheet" href="css/large.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <header class="clearfix">
+                <figure class="logo">
+                        <img src="images/logo-assets/logo0.png" alt="logo"
+                        srcset="images/logo-assets/logo1.png 1x, 
+                                images/logo-assets/logo2.png 2x, 
+                                images/logo-assets/logo3.png 3x">
+                    </figure>
+            <h1>Weather Where I Am</h1>
+            <h3 class="motto"> Just the weather I need </h3>
+           
+            <picture>
+                    <source srcset="images/lightning-storm-1200.jpg" media="(min-width: 800px)">
+                    <source srcset="images/lightning-storm-738.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                    <img id="preston-banner" src="lightning-storm-360.jpg" alt="Idaho farm with mountains">
+            </picture>
+        </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="preston.html" title="Preston">Preston</a></li>
+            <li><a href="soda-springs.html" title="Soda Springs">Soda Springs</a></li>
+            <li><a href="fish-haven.html" title="Fish Haven">Fish Haven</a></li>
+            <li><a href="stormcenter.html" title="Storm Center" class="active">Storm Center</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+        </ul>   
+        </nav>
+    </div>
+    
+<!-- CONTENT HERE -->
+<main role="main" class="clearfix main">
+    <h1>Share Storm Info</h1>
+       <form method="get" action="thanks.html">
+            <fieldset>
+              <legend>Contact Information</legend> 
+              <label class="top">Full Name*<input type="text" name="fullname" minlength="5" required></label>
+            <!-- <label class="top">Last Name*<input type="text" name="lname" required></label> -->
+              <label class="top">Email*<input type="email" name="email" placeholder="example@weatherwhereiam.com" required></label>
+              <label class="top">Phone*<input type="tel" name="phone" placeholder="2085551234" required></label>
+              <label class="top">Zip*<input name="number" oninput="javascript: if (this.value.length > this.maxLength) 
+                this.value = this.value.slice(0, this.maxLength);" type ="number" maxlength ="5" placeholder="5 digits" required/></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Priorities</legend>
+                <div>Are you in danger?</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="no">No</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <div>Storm Severity</div>
+                <label class="sbs" for="rating">Rating 1 to 10:</label>
+		<input type="range" name="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue"></span><br>
+               
+
+                <label class="top">Storm Date<input type="date" name="stormDate"></label>
+                <label class="top">Storm Region
+                    <select name="subject">
+                    <option value="">Select Region... &#9662;</option>
+                    <option value="preston">Preston</option>"
+                    <option value="sugarCity">Sugar City</option>"
+                    <option value="fishHaven">Fish Haven</option>"
+                    </select>
+                </label>
+
+                <label class="top">Storm Type<input list="stormType" name="stormType">
+                    <datalist id="stormType">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                </label>
+
+                <label class="top">Additional Information</label>
+                <textarea rows="8" cols="50" name="comment">
+                        Enter text here...</textarea>
+                        
+            
+            
+            
+            </fieldset>
+            <input type="submit" value = "Send Storm Info" class="submitBtn">
+       </form> 
+
+          
+        
+    </main>
+    
+    <div id="footer" class="clearfix motto">
+            <footer>
+       
+                                   
+                          
+                <p>&copy;2019</p>
+                
+                <div>
+                    <p id="demo"></p>
+                </div>
+        
+            </footer>
+        </div>
+        <script src="js/weatherapi.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/currentdate.js"></script>
+        </body>
+        </html>
+    

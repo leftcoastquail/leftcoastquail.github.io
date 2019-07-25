@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Temple Inn & Suites">
+<meta name="author" content="Natalie Mathie">
+<title>Temple Inn & Suites | Home</title>
+<link rel="stylesheet" href="css/normalize.css"> 
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css"> 
+<link rel="stylesheet" href="css/large.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Noto Serif|Amita|Lora&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div>
+        <header class="clearfix"> 
+          <nav class="clearfix">
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+            <li><a href="index.html" title="Home" class="active">Home</a></li>
+            <li><a href="temples.html" title="Temples">Temples</a></li>
+            <li><a href="services.html" title="Services">Services</a></li>
+            <li><a href="contact" title="Contact">Contact</a></li>
+            <li><a href="reservations.html" title="Reservations">Reservations</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+            </ul>   
+          </nav>
+        
+          <picture class="logo">
+            <source srcset="images/home-banner-L.jpg" media="(min-width: 1000px)">
+            <source srcset="images/home-banner-M.jpg" media="(min-width: 500px) and (max-width: 999px)">
+            <img id="home-banner" src="images/home-banner-S.jpg" alt="mountains and river">
+          </picture>
+        </header>
+    
+      
+    </div>
+    <main role="main" class="clearfix main">
+      <article>
+        <button>Book Now</button>
+      </article>
+      <picture class="home-family">
+        <source srcset="images/home-family-L.jpg" media="(min-width: 1000px)">
+        <source srcset="images/home-family-M.jpg" media="(min-width: 500px) and (max-width: 999px)">
+        <img src="images/home-family-S.jpg" alt="family of eight">
+      </picture>
+      
+    </main>
+    
+
+    <div id="footer" class="clearfix motto">
+        <footer>
+   
+                               
+                      
+            <p>&copy;2019</p>
+            <ul>
+              <li><a href="resources.html" title="Resources">Resources Page</a></li>
+            </ul>
+            <div>
+                <p id="demo"></p>
+            </div>
+    
+        </footer>
+    </div>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    </body>
+    </html>
+
+</html>
