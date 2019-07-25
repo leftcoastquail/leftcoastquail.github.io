@@ -16,13 +16,13 @@
       "Tuesday, 31 December"
     ],
     "endowments" : [
-        "Tuesday - Friday //n 7:00am, 9:00am, 11:00am, 1:00pm",
-        "Saturday //n 3:00pm "
+        "Tuesday - Friday 7:00am, 9:00am, 11:00am, 1:00pm",
+        "Saturday - hourly between 7:00am - 12:00pm"
     ]
   },
   {
     "name": "The Hague Netherlands",
-    "address": "Osijlaan 2 //n 2722 CV //n Zoetermeer Netherlands",
+    "address": "Osijlaan 2\n 2722 CV \nZoetermeer Netherlands",
     "yearDedicated": 2002,
     "phone": "+31 79-343-5310",
     "email": "temple.thehague.netherlands@churchofjesuschrist.org",
