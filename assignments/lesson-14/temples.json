@@ -1,7 +1,7 @@
 {
   "temples" : [
   {
-    "name": "Bogotá Colombia",
+    "name": "Bogotá Colombia Temple",
     "address": "Carrera 46 N°127-45 Bogotá Distrito Capital Colombia",
     "yearDedicated": 1999,
     "phone": "+57 1-625-8000",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "name": "The Hague Netherlands",
+    "name": "The Hague Netherlands Temple",
     "address": "Osijlaan 2 2722 CV Zoetermeer Netherlands",
     "yearDedicated": 2002,
     "phone": "+31 79-343-5310",
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "name": "Papeete Tahiti",
+    "name": "Papeete Tahiti Temple",
     "address": "Temples S.D.J. (Mormon) Allee Pierre Loti Papeete, Tahiti 98716, French Polynesia",
     "yearDedicated": 1983,
     "phone": "+689 40-50-3939",
@@ -82,7 +82,7 @@
     ]
   },
   {
-    "name": "Cebu City Philippines",
+    "name": "Cebu City Philippines Temple",
     "address": "The Church of Jesus Christ of Latter-day Saints Gorordo Avenue, Barangay Lahug, Cebu City, 6000 Cebu, Philippines",
     "yearDedicated": 2010,
     "phone": "+63 32-230-1207",

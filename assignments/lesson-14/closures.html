@@ -1,50 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Weather Where I Am Home">
+<meta name="description" content="Temple Inn & Suites">
 <meta name="author" content="Natalie Mathie">
+<title>Temple Inn & Suites | Home</title>
+<link rel="stylesheet" href="css/normalize.css"> 
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css"> 
+<link rel="stylesheet" href="css/large.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Noto Serif|Amita|Lora&display=swap" rel="stylesheet">
 
-
-<title>Weather Where I Am | Home</title>
-
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Lora|Staatliches&display=swap" rel="stylesheet">
-
-
-
-
-<!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
 </head>
+
 
 <body>
     <div>
-        <header>
-            <h2>Weather Where I Am</h2>
-            <div class="motto"> Just the weather I need </div>
-            <!-- <img id="home-banner" src="images/corn-small.jpg" alt="hero-image"> -->
-        </header>
-    
-        <nav>
-            <ul class="navigation clearfix">
-                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a href="preston" title="Preston">Preston</a></li>
-                <li><a href="soda-springs" title="Soda Springs">Soda Springs</a></li>
-                <li><a href="fish-haven" title="Fish Haven">Fish Haven</a></li>
-                <li><a href="storm-center" title="Storm Center">Storm Center</a></li>
-                <li><a href="gallery" title="Gallery">Gallery</a></li>
-                <li><a href="index" title="Home" class="current">Home</a></li>
+        <header class="clearfix"> 
+          <nav class="clearfix">
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="closures.html" title="Temples" class="active">Temples</a></li>
+            <li><a href="services.html" title="Services">Services</a></li>
+            <li><a href="contact" title="Contact">Contact</a></li>
+            <li><a href="reservations.html" title="Reservations">Reservations</a></li>
+            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
             </ul>   
-            
-        </nav>
+          </nav>
+        
+          <picture class="logo">
+            <source srcset="images/home-banner-L.jpg" media="(min-width: 1000px)">
+            <source srcset="images/home-banner-M.jpg" media="(min-width: 500px) and (max-width: 999px)">
+            <img id="home-banner" src="images/home-banner-S.jpg" alt="Temple Inn & Suites Logo">
+          </picture>
+        </header>
     </div>
 
     <main role="main" class="clearfix main">
