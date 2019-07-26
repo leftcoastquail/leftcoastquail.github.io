@@ -80,6 +80,8 @@
           var myParaE = document.createElement('p');
           var myParaF = document.createElement('p');
           var myListC = document.createElement('ul');
+          var myPara4 = document.createElement('p');
+          var myList4 = document.createElement('ul');
           myH2.textContent = heroes[i].name;
           myPara1.textContent = 'Address: ' + heroes[i].address;
           myPara2.textContent = 'History: Dedicated ' + heroes[i].yearDedicated;
@@ -102,6 +104,13 @@
             listItem3.textContent = superPowers[j];
             myList3.appendChild(listItem3);
           }
+          myPara4.textContent = 'Services:';
+          var servicesList = heroes[i].services;
+          for(var l = 0; l < servicesList.length; l++) {
+            var listItem4 = document.createElement('li');
+            listItem4.textContent = servicesList[l];
+            myList4.appendChild(listItem4);
+          }
           
           myArticle.appendChild(myH2);
           myArticle.appendChild(myPara1);
@@ -115,11 +124,48 @@
           myArticle.appendChild(myParaF);
           myArticle.appendChild(myPara3);
           myArticle.appendChild(myList3);
+          myArticle.appendChild(myPara4);
+          myArticle.appendChild(myList4);
           section.appendChild(myArticle);
+          
           
         }
       }
       </script>
+    
+    <!------BOGOTA WEATHER API------>
+      <div class="clearfix currentWeather"> 
+          <figure class="home-family">
+              <img src="images/bogota-S.jpg" alt="Bogota, Colombia Temple" sizes="50vw"
+                srcset="images/bogota-M.jpg 600w,
+                        images/bogota-L.jpg 800w">
+          </figure>
+        <h2>Current Conditions Bogota, Colombia</h2>
+        <p><span id="bog-current"></span>
+            <img id="bog-img" src="" alt=""></img>
+        </p>
+        <p>Temperature: <span id="bog-temp"></span>&deg; F</p>
+        <p>High: <span id="bog-tempHigh"></span>&deg; F </p>
+        <p>Humidity: <span id="bog-humidity"></span>&percnt; </p>
+        <p>Wind Speed: <span id="bog-windS"></span> mph </p>
+        </div>
+    <!------THE HAGUE WEATHER API------>
+        <div class="clearfix currentWeather"> 
+            <figure class="home-family">
+                <img src="images/hague-S.jpg" alt="Bogota, Colombia Temple" sizes="50vw"
+                  srcset="images/hague-M.jpg 600w,
+                          images/hague-L.jpg 800w">
+            </figure>
+          <h2>Current Conditions The Hague, Netherlands</h2>
+          <p><span id="hag-current"></span>
+              <img id="hag-img" src="" alt=""></img>
+          </p>
+          <p>Temperature: <span id="hag-temp"></span>&deg; F</p>
+          <p>High: <span id="hag-tempHigh"></span>&deg; F </p>
+          <p>Humidity: <span id="hag-humidity"></span>&percnt; </p>
+          <p>Wind Speed: <span id="hag-windS"></span> mph </p>
+          </div>  
+    
       </main>
       
    
@@ -131,7 +177,8 @@
                     
           <p>&copy;2019</p>
           <p>
-            <a href="resources.html" title="Resources">Resources Page</a>
+            <a href="resources.html" title="Resources">Resources Page</a> <br>
+            <a href="https://openweathermap.org/api">Weather Info Provided by OpenWeatherMap.org</a>
           </p>
           <div>
               <p id="demo"></p>
@@ -140,7 +187,8 @@
       </footer>
   </div>
 </body>
-  <script src="js/weatherapi.js"></script>
+  <script src="js/weatherapi-bogota.js"></script>
+  <script src="js/weatherapi-hague.js"></script>
   <script src="js/hamburger.js"></script>
   <script src="js/currentdate.js"></script>
 </html>
