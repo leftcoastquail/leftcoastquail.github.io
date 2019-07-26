@@ -2,22 +2,37 @@
 
 
 main div.currentWeather {
-    max-width: 33%;
-    float: right;
+    float: left;
+    padding: 10px;  
+    margin: 10px;
+    height: 800px;
 }
 
 div.gallery figure {
     flex-basis: 46%;
 }
 
-main article picture img{
-    display: block;
+main section article {
     float: left;
-    padding: 8px;
-    margin: 0;
-    max-width: 50%;
+    padding: 10px;  
+    border: 10px solid gold;
+    margin: 10px;
+    height: 800px;
 }
 
+main article picture img{
+    display: block;
+    padding: 8px;
+    margin: 0;
+    max-width: 100%;
+}
+
+main div figure img{
+    display: block;
+    padding: 8px;
+    margin: 0;
+    max-width: 100%;
+}
 
 }
 /* end of media query */

@@ -135,36 +135,64 @@
     
     <!------BOGOTA WEATHER API------>
       <div class="clearfix currentWeather"> 
-          <figure class="home-family">
-              <img src="images/bogota-S.jpg" alt="Bogota, Colombia Temple" sizes="50vw"
+          <figure class="templeIMG">
+              <img src="images/bogota-S.jpg" alt="Bogota Colombia Temple" sizes="48vw"
                 srcset="images/bogota-M.jpg 600w,
                         images/bogota-L.jpg 800w">
           </figure>
-        <h2>Current Conditions Bogota, Colombia</h2>
-        <p><span id="bog-current"></span>
-            <img id="bog-img" src="" alt=""></img>
-        </p>
+        <h2>Current Conditions Bogotá, Colombia</h2>
+        <p><span id="bog-current"></span></p>
         <p>Temperature: <span id="bog-temp"></span>&deg; F</p>
         <p>High: <span id="bog-tempHigh"></span>&deg; F </p>
         <p>Humidity: <span id="bog-humidity"></span>&percnt; </p>
         <p>Wind Speed: <span id="bog-windS"></span> mph </p>
-        </div>
+      </div>
     <!------THE HAGUE WEATHER API------>
-        <div class="clearfix currentWeather"> 
-            <figure class="home-family">
-                <img src="images/hague-S.jpg" alt="Bogota, Colombia Temple" sizes="50vw"
-                  srcset="images/hague-M.jpg 600w,
-                          images/hague-L.jpg 800w">
-            </figure>
+      <div class="clearfix currentWeather"> 
+          <figure class="templeIMG">
+            <img src="images/hague-S.jpg" alt="The Hague Netherlands Temple" sizes="48vw"
+              srcset="images/hague-M.jpg 600w,
+                      images/hague-L.jpg 800w">
+          </figure>
           <h2>Current Conditions The Hague, Netherlands</h2>
-          <p><span id="hag-current"></span>
-              <img id="hag-img" src="" alt=""></img>
-          </p>
+          <p><span id="hag-current"></span></p>
           <p>Temperature: <span id="hag-temp"></span>&deg; F</p>
           <p>High: <span id="hag-tempHigh"></span>&deg; F </p>
           <p>Humidity: <span id="hag-humidity"></span>&percnt; </p>
           <p>Wind Speed: <span id="hag-windS"></span> mph </p>
-          </div>  
+      </div>  
+
+    <!------PAPEETE WEATHER API------>
+    <div class="clearfix currentWeather"> 
+        <figure class="templeIMG">
+            <img src="images/papeete-S.jpg" alt="Papeete Tahiti Temple" sizes="48vw"
+              srcset="images/papeete-M.jpg 600w,
+                      images/papeete-L.jpg 800w">
+        </figure>
+      <h2>Current Conditions Papeete, Tahiti</h2>
+      <p><span id="pap-current"></span>
+          <img id="pap-img" src="" alt=""></img>
+      </p>
+      <p>Temperature: <span id="pap-temp"></span>&deg; F</p>
+      <p>High: <span id="pap-tempHigh"></span>&deg; F </p>
+      <p>Humidity: <span id="pap-humidity"></span>&percnt; </p>
+      <p>Wind Speed: <span id="pap-windS"></span> mph </p>
+      </div>  
+
+      <!------CEBU WEATHER API------>
+    <div class="clearfix currentWeather"> 
+        <figure class="templeIMG">
+            <img src="images/cebu-S.jpg" alt="Cebu Philippines Temple" sizes="48vw"
+              srcset="images/cebu-M.jpg 600w,
+                      images/cebu-L.jpg 800w">
+        </figure>
+      <h2>Current Conditions Cebu, Philippines</h2>
+      <p><span id="ceb-current"></span></p>
+      <p>Temperature: <span id="ceb-temp"></span>&deg; F</p>
+      <p>High: <span id="ceb-tempHigh"></span>&deg; F </p>
+      <p>Humidity: <span id="ceb-humidity"></span>&percnt; </p>
+      <p>Wind Speed: <span id="ceb-windS"></span> mph </p>
+      </div>  
     
       </main>
       
@@ -187,8 +215,7 @@
       </footer>
   </div>
 </body>
-  <script src="js/weatherapi-bogota.js"></script>
-  <script src="js/weatherapi-hague.js"></script>
+  <script src="js/weatherapi.js"></script>
   <script src="js/hamburger.js"></script>
   <script src="js/currentdate.js"></script>
 </html>

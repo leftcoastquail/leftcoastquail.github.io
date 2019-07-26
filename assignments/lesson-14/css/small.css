@@ -23,17 +23,7 @@ header picture.logo {
     width: 96%;
 }
 
-main div.currentWeather {
-    float: none;
-    font-family: 'Lora', sans-serif;
-    margin: 2%;
-    border: 8px solid rgb(5, 53, 83);
-    padding: 10px 20px;
-    margin: 20px;
-    background-color: rgba(107, 165, 201, 0.514);
-    
-    
-}
+
 
 
 
@@ -79,7 +69,6 @@ nav ul.hide {display: none;}
 main div.container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 main div button {
@@ -94,15 +83,12 @@ main div button {
 }
 
 main div article {
-    margin: 2%;
     border: 10px solid cyan;
+    font-family: 'Lora', sans-serif;
     }
 
 
-main article p {
-    /* display: block; */
-    font-family: 'Lora', sans-serif;
-}
+
 
 .home-family {
     /* display: block; */
@@ -110,6 +96,13 @@ main article p {
     max-width: 100%;
     border: 10px solid cyan;
 }
+
+.templeIMG {
+    
+    max-height: 100%;
+    
+}
+
 
 
 /*---------WEATHER GALLERY-----*/
@@ -141,9 +134,7 @@ main section article {
     display: flex;
     flex-direction: column;
     background-color: #FFFFBD;
-    justify-content: left;
     font-family: 'Lora', sans-serif;
-    float: left;
     width: 90%;
     min-height: 300px; 
     padding: 25px;
@@ -156,9 +147,14 @@ section p {
     margin: 5px 0;
 }
       
-section ul {
-    margin-top: 5px 0 5px 12px;
-    text-decoration: none;
+main div.currentWeather {
+    font-family: 'Lora', sans-serif;
+    border: 8px solid rgb(5, 53, 83);
+    padding: 25px;
+    margin: 10px;
+    background-color: rgba(107, 165, 201, 0.514);
+    height: 700px; 
+    width: 90%;
 }
 
 

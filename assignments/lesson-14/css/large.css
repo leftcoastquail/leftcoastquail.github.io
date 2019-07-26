@@ -22,8 +22,9 @@ nav button {display: none;}
         }
 
 main div.currentWeather {
-    max-width: 48%;
-    float: right;
+    width: 48%;
+    overflow-x: hidden;
+    float: left;
 }
 
 main section article {
