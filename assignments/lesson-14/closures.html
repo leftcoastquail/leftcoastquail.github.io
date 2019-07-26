@@ -30,7 +30,7 @@
         <header>
             <h2>Weather Where I Am</h2>
             <div class="motto"> Just the weather I need </div>
-            <img id="home-banner" src="images/corn-small.jpg" alt="hero-image">
+            <!-- <img id="home-banner" src="images/corn-small.jpg" alt="hero-image"> -->
         </header>
     
         <nav>
@@ -74,43 +74,49 @@
           var myParaA = document.createElement('p');
           var myParaB = document.createElement('p');
           var myPara3 = document.createElement('p');
-          var myList = document.createElement('ul');
+          var myList3 = document.createElement('ul');
+          var myParaC = document.createElement('p');
+          var myParaD = document.createElement('p');
+          var myParaE = document.createElement('p');
+          var myParaF = document.createElement('p');
+          var myListC = document.createElement('ul');
           myH2.textContent = heroes[i].name;
           myPara1.textContent = 'Address: ' + heroes[i].address;
-          myPara2.textContent = 'Year Dedicated: ' + heroes[i].yearDedicated;
+          myPara2.textContent = 'History: Dedicated in ' + heroes[i].yearDedicated;
           myParaA.textContent = 'Telephone: ' + heroes[i].phone;
           myParaB.textContent = 'Email: ' + heroes[i].email;
-          myParaC.textContent = '2019 Closures:';
+          myParaC.textContent = 'Endowments: ';
+          var sessionSchedule = heroes[i].endowments;
+          for(var k = 0; k < sessionSchedule.length; k++) {
+            var listItemC = document.createElement('li');
+            listItemC.textContent = sessionSchedule[k];
+            myListC.appendChild(listItemC);
+          }
+          myParaD.textContent = 'Baptisms: ' + heroes[i].baptisms;
+          myParaE.textContent = 'Initiatories: ' + heroes[i].initiatories;
+          myParaF.textContent = 'Sealings: ' + heroes[i].sealings;
+          myPara3.textContent = '2019 Closures:';
           var superPowers = heroes[i].closures;
           for(var j = 0; j < superPowers.length; j++) {
-            var listItem = document.createElement('li');
-            listItem.textContent = superPowers[j];
-            myList.appendChild(listItem);
+            var listItem3 = document.createElement('li');
+            listItem3.textContent = superPowers[j];
+            myList3.appendChild(listItem3);
           }
-          myPara3.textContent = 'Session Schedule:';
-          var superPowers = heroes[i].endowments;
-          for(var k = 0; k < superPowers.length; k++) {
-            var listItem = document.createElement('li');
-            listItem.textContent = superPowers[k];
-            myList.appendChild(listItem);
-          }
-          var myImg = document.createElement('img'); {
-            for(var m = 0; m < heroes.length; m++)
-                  if (m==0) {myImg.src='images/bogota.jpg';}
-                //  else if (m==2) {myImg.src='images/papeete.jpg';}
-                //  else if (m==3) {myImg.src='images/papeete.jpg';}
-                  else {myImg.src='images/cebu.jpg';}
-          }
+          
           myArticle.appendChild(myH2);
           myArticle.appendChild(myPara1);
           myArticle.appendChild(myPara2);
           myArticle.appendChild(myParaA);
           myArticle.appendChild(myParaB);
           myArticle.appendChild(myParaC);
+          myArticle.appendChild(myListC);
+          myArticle.appendChild(myParaD);
+          myArticle.appendChild(myParaE);
+          myArticle.appendChild(myParaF);
           myArticle.appendChild(myPara3);
-          myArticle.appendChild(myList);
+          myArticle.appendChild(myList3);
           section.appendChild(myArticle);
-          myArticle.appendChild(myImg);
+          
         }
       }
       </script>

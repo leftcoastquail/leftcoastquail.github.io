@@ -102,7 +102,7 @@ main div article {
 
 main article p {
     /* display: block; */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', sans-serif;
 }
 
 .home-family {
@@ -138,18 +138,19 @@ div.gallery figcaption {
 
 /* ------TEMPLES------ */
 main section article {
+    align-content: center;
     display: flex;
     flex-direction: column;
     background-color: #FFFFBD;
     justify-content: left;
     font-family: 'Lora', sans-serif;
-    /*box-sizing: 50%;*/
     float: left;
-    min-width: 500px;
+    width: 90%;
     min-height: 300px; 
     padding: 25px;
     margin: 20px;
-    border: 5px solid gold;
+    border: 10px solid rgb(250, 223, 69);
+    overflow-x: auto; 
 }
 
 section p {

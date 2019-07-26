@@ -26,6 +26,12 @@ main div.currentWeather {
     float: right;
 }
 
+main section article {
+    width: 50%;
+    overflow-x: hidden;
+}
+
+
 div.gallery figure {
     flex-basis: 29%;
 }
