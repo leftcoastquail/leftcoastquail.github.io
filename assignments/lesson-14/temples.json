@@ -21,7 +21,13 @@
     ],
     "baptisms" : "Walk-in",
     "initiatories" : "Walk-in",
-    "sealings" : "Walk-in"
+    "sealings" : "Walk-in",
+    "services" : [
+        "Clothing rental available",
+        "Cafeteria available",
+        "Patron housing available",
+        "Distribution center nearby"
+    ]
   },
   {
     "name": "The Hague Netherlands",
@@ -39,7 +45,13 @@
     ],
     "baptisms" : "Walk-in",
     "initiatories" : "Walk-in",
-    "sealings" : "Walk-in"
+    "sealings" : "Walk-in",
+    "services" : [
+        "No clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "No distribution center nearby"
+    ]
   },
   {
     "name": "Papeete Tahiti",
@@ -61,7 +73,13 @@
     ],
     "baptisms" : "Walk-in",
     "initiatories" : "Walk-in",
-    "sealings" : "Walk-in"
+    "sealings" : "Walk-in",
+    "services" : [
+        "No clothing rental available",
+        "No cafeteria available",
+        "Patron housing available",
+        "Distribution center nearby"
+    ]
   },
   {
     "name": "Cebu City Philippines",
@@ -82,7 +100,13 @@
     ],
     "baptisms" : "Walk-ins",
     "initiatories" : "Walk-ins",
-    "sealings" : "Walk-ins"
+    "sealings" : "Walk-ins",
+    "services" : [
+        "Clothing rental available",
+        "No cafeteria available",
+        "Patron housing available",
+        "Distribution center nearby"
+    ]
      }
     ]
 }
