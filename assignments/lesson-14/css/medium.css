@@ -15,19 +15,14 @@ div.gallery figure {
 main section article {
     float: left;
     padding: 10px;  
-    border: 10px solid gold;
+    border: 10px solid #000F49;
     margin: 10px;
     height: 800px;
 }
 
-main article picture img{
-    display: block;
-    padding: 8px;
-    margin: 0;
-    max-width: 100%;
-}
 
-main div figure img{
+/* TEMPLE PAGE IMAGES */
+main div figure img {
     display: block;
     padding: 8px;
     margin: 0;

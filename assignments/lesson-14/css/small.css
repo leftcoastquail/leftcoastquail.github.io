@@ -67,42 +67,35 @@ nav ul.hide {display: none;}
 
 /*----------MAIN-------------*/
 main div.container {
-    display: flex;
-    flex-direction: column;
+    display: flexbox;
+    margin: 4%;
 }
 
 main div button {
-    font-family: 'Noto Serif', cursive;
-   /* display: block; */
-    color: rgb(16, 56, 116);
-    margin: 2%;
+    font-family: 'Amita', cursive;
+    color: gold;
+    margin: 4%;
     min-width: 25%;
     min-height: 50px;
     text-align: center;
     font-size: 35px;
+    background-color: #000F49;
 }
 
 main div article {
     border: 10px solid cyan;
     font-family: 'Lora', sans-serif;
     }
-
-
-
-
-.home-family {
-    /* display: block; */
-    margin: 2%;
-    max-width: 100%;
+.homeIMG {
+    max-width: 50%;
     border: 10px solid cyan;
 }
-
-.templeIMG {
-    
-    max-height: 100%;
-    
+.l-img {
+    float: left;
 }
-
+.r-img {
+    float: right;
+}
 
 
 /*---------WEATHER GALLERY-----*/

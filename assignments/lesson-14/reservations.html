@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Community weather site for Preston, Idaho, USA">
-    <title>Weather Where I Am | Storm Center</title>
-    <link rel="stylesheet" href="css/normalize.css"> 
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css"> 
-    <link rel="stylesheet" href="css/large.css"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Staatliches&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="description" content="Temple Inn & Suites">
+<meta name="author" content="Natalie Mathie">
+<title>Temple Inn & Suites | Home</title>
+<link rel="stylesheet" href="css/normalize.css"> 
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css"> 
+<link rel="stylesheet" href="css/large.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Noto Serif|Amita|Lora&display=swap" rel="stylesheet">
 
 </head>
+
+
 <body>
     <div>
-        <header class="clearfix">
-                <figure class="logo">
-                        <img src="images/logo-assets/logo0.png" alt="logo"
-                        srcset="images/logo-assets/logo1.png 1x, 
-                                images/logo-assets/logo2.png 2x, 
-                                images/logo-assets/logo3.png 3x">
-                    </figure>
-            <h1>Weather Where I Am</h1>
-            <h3 class="motto"> Just the weather I need </h3>
-           
-            <picture>
-                    <source srcset="images/lightning-storm-1200.jpg" media="(min-width: 800px)">
-                    <source srcset="images/lightning-storm-738.jpg" media="(min-width: 500px) and (max-width: 799px)">
-                    <img id="preston-banner" src="lightning-storm-360.jpg" alt="Idaho farm with mountains">
-            </picture>
-        </header>
-    
-        <nav class="clearfix">
-            <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide">
+        <header class="clearfix"> 
+          <nav class="clearfix">
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
             <li><a href="index.html" title="Home">Home</a></li>
-            <li><a href="preston.html" title="Preston">Preston</a></li>
-            <li><a href="soda-springs.html" title="Soda Springs">Soda Springs</a></li>
-            <li><a href="fish-haven.html" title="Fish Haven">Fish Haven</a></li>
-            <li><a href="stormcenter.html" title="Storm Center" class="active">Storm Center</a></li>
+            <li><a href="closures.html" title="Temples">Temples</a></li>
+            <li><a href="services.html" title="Services">Services</a></li>
+            <li><a href="contact" title="Contact">Contact</a></li>
+            <li><a href="reservations.html" title="Reservations" class="active">Reservations</a></li>
             <li><a href="gallery.html" title="Gallery">Gallery</a></li>
-        </ul>   
-        </nav>
+            </ul>   
+          </nav>
+        
+          <picture class="logo">
+            <source srcset="images/home-banner-L.jpg" media="(min-width: 1000px)">
+            <source srcset="images/home-banner-M.jpg" media="(min-width: 500px) and (max-width: 999px)">
+            <img id="home-banner" src="images/home-banner-S.jpg" alt="Temple Inn & Suites Logo">
+          </picture>
+        </header>
     </div>
     
 <!-- CONTENT HERE -->
