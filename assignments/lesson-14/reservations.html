@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="description" content="Temple Inn & Suites">
 <meta name="author" content="Natalie Mathie">
-<title>Temple Inn & Suites | Home</title>
+<title>Temple Inn & Suites | Reservations</title>
 <link rel="stylesheet" href="css/normalize.css"> 
 <link rel="stylesheet" href="css/small.css">
 <link rel="stylesheet" href="css/medium.css"> 
@@ -26,7 +26,6 @@
             <li><a href="services.html" title="Services">Services</a></li>
             <li><a href="contact" title="Contact">Contact</a></li>
             <li><a href="reservations.html" title="Reservations" class="active">Reservations</a></li>
-            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
             </ul>   
           </nav>
         
@@ -40,63 +39,52 @@
     
 <!-- CONTENT HERE -->
 <main role="main" class="clearfix main">
-    <h1>Share Storm Info</h1>
+    <h1>Reservations</h1>
        <form method="get" action="thanks.html">
             <fieldset>
               <legend>Contact Information</legend> 
-              <label class="top">Full Name*<input type="text" name="fullname" minlength="5" required></label>
-            <!-- <label class="top">Last Name*<input type="text" name="lname" required></label> -->
-              <label class="top">Email*<input type="email" name="email" placeholder="example@weatherwhereiam.com" required></label>
-              <label class="top">Phone*<input type="tel" name="phone" placeholder="2085551234" required></label>
-              <label class="top">Zip*<input name="number" oninput="javascript: if (this.value.length > this.maxLength) 
-                this.value = this.value.slice(0, this.maxLength);" type ="number" maxlength ="5" placeholder="5 digits" required/></label>
+              <label class="top">First Name*<input type="text" name="fname" required></label>
+              <label class="top">Last Name*<input type="text" name="lname" required></label>
+              <label class="top">Email*<input type="email" name="email" placeholder="example@domain.com" required></label>
+              <label class="top">Phone*<input type="tel" name="phone" placeholder="366 555 6565 " required></label>
+              <label class="top">Home Country<input type="text" name="country"></label>
             </fieldset>
 
-            <fieldset>
-                <legend>Priorities</legend>
-                <div>Are you in danger?</div>
-                <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
-                <label class="sbs"><input type="radio" name="danger" value="no">No</label>
-                <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
-            </fieldset>
 
             <fieldset>
-                <legend>Storm Information</legend>
-                <div>Storm Severity</div>
-                <label class="sbs" for="rating">Rating 1 to 10:</label>
-		<input type="range" name="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		<span id="ratingvalue"></span><br>
-               
-
-                <label class="top">Storm Date<input type="date" name="stormDate"></label>
-                <label class="top">Storm Region
-                    <select name="subject">
-                    <option value="">Select Region... &#9662;</option>
-                    <option value="preston">Preston</option>"
-                    <option value="sugarCity">Sugar City</option>"
-                    <option value="fishHaven">Fish Haven</option>"
-                    </select>
+                <legend>Stay Information</legend>
+                <label class="top">Temple Inn & Suites Location
+                        <select name="location">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="bogota">Bogota, Colombia</option>"
+                        <option value="cebu">Cebu City, Philippines</option>"
+                        <option value="hague">The Hague, Netherlands</option>"
+                        <option value="papeete">Papeete, Tahiti</option>"
+                        </select>
                 </label>
+                <label class="top">Begin Date<input type="date" name="beginDate"></label>
+                <label class="top">End Date<input type="date" name="endDate"></label>
+                <label class="top">Number of Guests<input type="text" name="guests"></label>
 
-                <label class="top">Storm Type<input list="stormType" name="stormType">
-                    <datalist id="stormType">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist>
+                <label class="top">Room Type
+                        <select name="roomType">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="oneQ">1 Queen</option>"
+                        <option value="twoQ">2 Queens</option>"
+                        <option value="famSuite">Family Suite</option>"
+                        <option value="missSuite">Missionary Suite</option>"
+                        </select>
                 </label>
+                
 
                 <label class="top">Additional Information</label>
-                <textarea rows="8" cols="50" name="comment">
-                        Enter text here...</textarea>
+                <textarea rows="8" cols="39" name="comment">Special Accomodations/Comments</textarea>
                         
             
             
             
             </fieldset>
-            <input type="submit" value = "Send Storm Info" class="submitBtn">
+            <input type="submit" value = "Reserve Now" class="submitBtn">
        </form> 
 
           
@@ -105,20 +93,10 @@
     
     <div id="footer" class="clearfix motto">
             <footer>
-       
-                                   
-                          
                 <p>&copy;2019</p>
-                
-                <div>
-                    <p id="demo"></p>
-                </div>
-        
             </footer>
         </div>
-        <script src="js/weatherapi.js"></script>
         <script src="js/hamburger.js"></script>
-        <script src="js/currentdate.js"></script>
         </body>
         </html>
     

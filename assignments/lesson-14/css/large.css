@@ -20,7 +20,7 @@ nav button {display: none;}
         padding: .8rem 1rem;
 
         }
-
+/* ---- MAIN ---- */
 main div.currentWeather {
     width: 48%;
     overflow-x: hidden;
@@ -33,10 +33,26 @@ main section article {
     float: left;
 }
 
+.homeIMG {
+    max-width: 50%;
+    
+}
 
 div.gallery figure {
     flex-basis: 29%;
 }
 
+/*---FORM---*/
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ 
 }
-/* end of media query */
+
+form fieldset {
+    min-width: 45%;
+}
+
+
+}
