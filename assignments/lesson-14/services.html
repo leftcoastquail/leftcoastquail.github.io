@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Temple Inn & Suites">
+<meta name="author" content="Natalie Mathie">
+<title>Temple Inn & Suites | Services</title>
+<link rel="stylesheet" href="css/normalize.css"> 
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css"> 
+<link rel="stylesheet" href="css/large.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Noto Serif|Amita|Lora&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div>
+        <header class="clearfix"> 
+          <nav class="clearfix">
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="closures.html" title="Temples">Temples</a></li>
+            <li><a href="services.html" title="Services" class="active">Services</a></li>
+            <li><a href="contact" title="Contact">Contact</a></li>
+            <li><a href="reservations.html" title="Reservations">Reservations</a></li>
+            </ul>   
+          </nav>
+        
+          <picture class="logo">
+            <source srcset="images/home-banner-L.jpg" media="(min-width: 1000px)">
+            <source srcset="images/home-banner-M.jpg" media="(min-width: 500px) and (max-width: 999px)">
+            <img id="home-banner" src="images/home-banner-S.jpg" alt="Temple Inn & Suites Logo">
+          </picture>
+        </header>
+    </div>
+    
+    <main role="main" class="clearfix main">
+      <h1>Services</h1>
+      <div class="container">
+        <article>
+            <ul><h3>Specialized Services</h3>
+              <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</li>
+              <li>Playroom and low-cost, short-term babysitting services for the children of patrons </li>
+              <li><a href="missionaries.html" title="missionaries">Long-term stay accommodations in kitchenette suites for full-time temple missionaries</a></li>
+              <li>Temple history themed reception and sitting area</li>
+              <li><a href="receptions.html" title="Receptions">Wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</a></li>
+              <li>Family search center that supports family search and ordinance work</li>
+          </article>   
+          <article>
+          <ul><h3>Free Amenities</h3>
+           <li>Breakfast</li> 
+           <li>Exercise/workout room</li> 
+           <li>Indoor pool</li> 
+           <li>WiFi high-speed internet access and smart TVs</li> 
+           <li>Parking</li>
+           <li>Temple shuttle</li>
+           <li>Family history consultation and family ordinance card service</li>
+
+          </ul>
+        </article>
+        <article>
+        <figure>
+            <img class="homeIMG" src="purple-reception-S.jpg" alt="Wedding reception decor" sizes="50vw"
+            srcset="images/purple-reception-M.jpg 600w,
+                    images/purple-reception-L.jpg 800w">
+        </figure>
+        <button><a href="receptions.html" title="Receptions">Receptions</a></button>
+        </article>
+        
+        <article>
+            <figure>
+              <img class="homeIMG" src="missionaries-S.jpg" alt="Missionary couple" sizes="50vw"
+                srcset="images/missionaries-M.jpg 600w,
+                        images/missionaries-L.jpg 800w">
+            </figure>
+            <button><a href="missionaries.html" title="missionaries">Full-time Temple Missionaries</a></button>
+        </article>
+    </div>
+    </main>
+    
+
+  
+</body>
+    
+    <div id="footer" class="clearfix">
+      <footer>
+ 
+                             
+                    
+          <p>&copy;2019</p>
+          <p>
+            <a href="resources.html" title="Resources">Resources Page</a>
+          </p>
+      </footer>
+  </div>
+  
+  <script src="js/hamburger.js"></script>
+  
+
+</html>

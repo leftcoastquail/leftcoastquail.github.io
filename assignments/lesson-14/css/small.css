@@ -95,21 +95,25 @@ main div button a {
 
 main div button a:hover {
     
-    background-color: rgba(135, 206, 250, 0.637);
-    color: #fff;
+    color: lightseagreen;
 }
 
 main div article {
-    border: 5px solid blanchedalmond;
+    border: 7px solid blanchedalmond;
+    border-radius: 8px;
     font-family: 'Lora', sans-serif;
     padding: 1%;
+    margin: 1%;
     }
 
+main div article.noBorder {
+    border: none;
+}
 
 .homeIMG {
-    max-width: 50%;
-    
+    min-width: 50%;
 }
+
 .l-img {
     float: left;
 }
@@ -213,7 +217,9 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-
+.missionary {
+    display: inline-block;
+}
 /*-------FOOTER--------------*/
 footer {
     background-color: #FFFFBD;

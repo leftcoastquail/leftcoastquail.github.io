@@ -21,7 +21,7 @@
           <nav class="clearfix">
             <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
-            <li><a href="index.html" title="Home" class="active">Home</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
             <li><a href="closures.html" title="Temples">Temples</a></li>
             <li><a href="services.html" title="Services">Services</a></li>
             <li><a href="contact" title="Contact">Contact</a></li>
@@ -38,30 +38,28 @@
     </div>
     
     <main role="main" class="clearfix main">
+        <h1>Full-time Temple Missionary Accomodations</h1>
       <div class="container">
         <article>
         <figure>
-          <img class="homeIMG" src="images/open-door-S.jpg" alt="Doorway into hotel room" sizes="50vw"
-            srcset="images/open-door-M.jpg 600w,
-                    images/open-door-L.jpg 800w">
+            <img class="homeIMG" src="suite-S.jpg" alt="missionary suite" sizes="50vw"
+            srcset="images/suite-M.jpg 600w,
+                    images/suite-L.jpg 800w">
         </figure>
-        <button><a href="reservations.html" title="Reservations">Reservations</a></button>
+            
+               <form method="get" action="missForm.html" class="missionary">
+                    <fieldset>
+                      <legend>Contact Information</legend> 
+                      <label class="top">First Name*<input type="text" name="fname" required></label>
+                      <label class="top">Last Name*<input type="text" name="lname" required></label>
+                      <label class="top">Email*<input type="email" name="email" placeholder="example@domain.com" required></label>
+                      <label class="top">Phone*<input type="tel" name="phone" placeholder="366 555 6565 " required></label>
+                    </fieldset>
+                   <div><input type="submit" value = "Send Contact Information" class="submitBtn missionary"></div> 
+                    
         </article>
         
-        <article class=noBorder>
-        <figure>
-          <img class="homeIMG l-img" src="images/kona-temple-S.jpg" alt="Kona Hawaii Temple" sizes="50vw"
-            srcset="images/kona-temple-M.jpg 600w,
-                    images/kona-temple-L.jpg 800w">
-        </figure>
-        <figure>
-            <img class="homeIMG r-img" src="images/home-family-S.jpg" alt="family of eight" sizes="50vw"
-              srcset="images/home-family-M.jpg 600w,
-                      images/home-family-L.jpg 800w">
-        </figure>
-        <h2>Kona Hawaii Temple</h2>
-        <p>Plans to construct the temple were announced 7 May 1998, Church leaders broke ground 13 March 1999, and Gordon B. Hinckley, president of The Church of Jesus Christ of Latter-day Saints from 1995 to 2008, dedicated the Kona Hawaii Temple 23 January 2000. The temple serves Latter-day Saints on the big island of Hawaii as well as Maui, Molokai and Lanai. The 10,700-square-foot temple’s exterior is white marble veneer.</p>
-        </article>
+       
     </div>
     </main>
     
@@ -75,9 +73,7 @@
                              
                     
           <p>&copy;2019</p>
-          <p>
-            <a href="resources.html" title="Resources">Resources Page</a>
-          </p>
+          
       </footer>
   </div>
   

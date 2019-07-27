@@ -22,9 +22,10 @@ nav button {display: none;}
         }
 /* ---- MAIN ---- */
 main div.currentWeather {
-    width: 48%;
+    width: 23%;
     overflow-x: hidden;
     float: left;
+    height: 500px;
 }
 
 main section article {
